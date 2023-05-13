@@ -1,0 +1,259 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.pytorch.demo.objectdetection"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="28"
+8-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:5:5-80
+11-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:5:22-77
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:6:5-65
+12-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:6:22-62
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:7:5-79
+13-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:8:5-81
+14-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:8:22-78
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:9:5-67
+15-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:9:22-64
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[com.google.firebase:firebase-inappmessaging:20.1.2] /home/nikola/.gradle/caches/transforms-2/files-2.1/a89f76de580810e2c5a44d1bf7c94c62/jetified-firebase-inappmessaging-20.1.2/AndroidManifest.xml:10:5-79
+16-->[com.google.firebase:firebase-inappmessaging:20.1.2] /home/nikola/.gradle/caches/transforms-2/files-2.1/a89f76de580810e2c5a44d1bf7c94c62/jetified-firebase-inappmessaging-20.1.2/AndroidManifest.xml:10:22-76
+17
+18    <uses-feature
+18-->[com.google.android.gms:play-services-maps:17.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/7752dcb5f35954b62a1d54735ffd34b4/jetified-play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+19        android:glEsVersion="0x00020000"
+19-->[com.google.android.gms:play-services-maps:17.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/7752dcb5f35954b62a1d54735ffd34b4/jetified-play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+20        android:required="true" />
+20-->[com.google.android.gms:play-services-maps:17.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/7752dcb5f35954b62a1d54735ffd34b4/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+21
+22    <queries>
+22-->[androidx.wear.tiles:tiles:1.1.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/005fbfa77ffa9bd5b8bf89a2730e7f4d/jetified-tiles-1.1.0/AndroidManifest.xml:7:5-11:15
+23        <intent>
+23-->[androidx.wear.tiles:tiles:1.1.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/005fbfa77ffa9bd5b8bf89a2730e7f4d/jetified-tiles-1.1.0/AndroidManifest.xml:8:9-10:18
+24            <action android:name="androidx.wear.tiles.action.BIND_UPDATE_REQUESTER" />
+24-->[androidx.wear.tiles:tiles:1.1.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/005fbfa77ffa9bd5b8bf89a2730e7f4d/jetified-tiles-1.1.0/AndroidManifest.xml:9:13-87
+24-->[androidx.wear.tiles:tiles:1.1.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/005fbfa77ffa9bd5b8bf89a2730e7f4d/jetified-tiles-1.1.0/AndroidManifest.xml:9:21-84
+25        </intent>
+26    </queries>
+27
+28    <application
+28-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:11:5-51:19
+29        android:allowBackup="true"
+29-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:12:9-35
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.5.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/20ef5b0ef65626922759a2312a98a5e9/core-1.5.0/AndroidManifest.xml:24:18-86
+31        android:debuggable="true"
+32        android:extractNativeLibs="false"
+33        android:icon="@mipmap/ic_launcher"
+33-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:13:9-43
+34        android:label="@string/app_name"
+34-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:14:9-41
+35        android:roundIcon="@mipmap/ic_launcher_round"
+35-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:15:9-54
+36        android:supportsRtl="true"
+36-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:16:9-35
+37        android:testOnly="true"
+38        android:theme="@style/AppTheme"
+38-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:17:9-40
+39        android:usesCleartextTraffic="true" >
+39-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:18:9-44
+40        <activity
+40-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:19:9-23:59
+41            android:name="org.pytorch.demo.objectdetection.RegisterActivity"
+41-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:20:13-45
+42            android:exported="false"
+42-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:21:13-37
+43            android:label="@string/title_activity_register"
+43-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:22:13-60
+44            android:theme="@style/AppTheme.NoActionBar" />
+44-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:23:13-56
+45        <activity
+45-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:24:9-28:59
+46            android:name="org.pytorch.demo.objectdetection.LoginActivity"
+46-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:25:13-42
+47            android:exported="false"
+47-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:26:13-37
+48            android:label="@string/title_activity_login"
+48-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:27:13-57
+49            android:theme="@style/AppTheme.NoActionBar" />
+49-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:28:13-56
+50        <activity
+50-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:29:9-31:39
+51            android:name="org.pytorch.demo.objectdetection.MapsActivity"
+51-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:30:13-41
+52            android:exported="true" />
+52-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:31:13-36
+53        <activity
+53-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:32:9-42:20
+54            android:name="org.pytorch.demo.objectdetection.MainActivity"
+54-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:33:13-41
+55            android:configChanges="orientation"
+55-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:34:13-48
+56            android:exported="true"
+56-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:35:13-36
+57            android:screenOrientation="portrait" >
+57-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:36:13-49
+58            <intent-filter>
+58-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:37:13-41:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:38:17-69
+59-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:38:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:40:17-77
+61-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:40:27-74
+62            </intent-filter>
+63        </activity>
+64        <activity
+64-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:43:9-46:52
+65            android:name="org.pytorch.demo.objectdetection.ObjectDetectionActivity"
+65-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:44:13-52
+66            android:configChanges="orientation"
+66-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:45:13-48
+67            android:screenOrientation="portrait" />
+67-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:46:13-49
+68
+69        <meta-data
+69-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:48:9-50:71
+70            android:name="com.google.android.geo.API_KEY"
+70-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:49:13-58
+71            android:value="AIzaSyCCFaynglqjbiyLhXRoGTIr-p2eYaeEjM8" />
+71-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:50:13-68
+72
+73        <service
+73-->[com.google.firebase:firebase-inappmessaging:20.1.2] /home/nikola/.gradle/caches/transforms-2/files-2.1/a89f76de580810e2c5a44d1bf7c94c62/jetified-firebase-inappmessaging-20.1.2/AndroidManifest.xml:14:9-20:19
+74            android:name="com.google.firebase.components.ComponentDiscoveryService"
+74-->[com.google.firebase:firebase-inappmessaging:20.1.2] /home/nikola/.gradle/caches/transforms-2/files-2.1/a89f76de580810e2c5a44d1bf7c94c62/jetified-firebase-inappmessaging-20.1.2/AndroidManifest.xml:15:13-84
+75            android:directBootAware="true"
+75-->[com.google.firebase:firebase-common:20.1.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/149d1aab705d9370b7ca2ca4b8cf64a2/jetified-firebase-common-20.1.0/AndroidManifest.xml:35:13-43
+76            android:exported="false" >
+76-->[com.google.firebase:firebase-inappmessaging:20.1.2] /home/nikola/.gradle/caches/transforms-2/files-2.1/a89f76de580810e2c5a44d1bf7c94c62/jetified-firebase-inappmessaging-20.1.2/AndroidManifest.xml:16:13-37
+77            <meta-data
+77-->[com.google.firebase:firebase-inappmessaging:20.1.2] /home/nikola/.gradle/caches/transforms-2/files-2.1/a89f76de580810e2c5a44d1bf7c94c62/jetified-firebase-inappmessaging-20.1.2/AndroidManifest.xml:17:13-19:85
+78                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar"
+78-->[com.google.firebase:firebase-inappmessaging:20.1.2] /home/nikola/.gradle/caches/transforms-2/files-2.1/a89f76de580810e2c5a44d1bf7c94c62/jetified-firebase-inappmessaging-20.1.2/AndroidManifest.xml:18:17-129
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.firebase:firebase-inappmessaging:20.1.2] /home/nikola/.gradle/caches/transforms-2/files-2.1/a89f76de580810e2c5a44d1bf7c94c62/jetified-firebase-inappmessaging-20.1.2/AndroidManifest.xml:19:17-82
+80            <meta-data
+80-->[com.google.firebase:firebase-abt:21.0.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/4ba4b63fd48a7c88a3f1e14714f09dd2/jetified-firebase-abt-21.0.1/AndroidManifest.xml:13:13-15:85
+81                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+81-->[com.google.firebase:firebase-abt:21.0.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/4ba4b63fd48a7c88a3f1e14714f09dd2/jetified-firebase-abt-21.0.1/AndroidManifest.xml:14:17-109
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.firebase:firebase-abt:21.0.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/4ba4b63fd48a7c88a3f1e14714f09dd2/jetified-firebase-abt-21.0.1/AndroidManifest.xml:15:17-82
+83            <meta-data
+83-->[com.google.firebase:firebase-datatransport:18.1.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/6a19fc30f950da5f3a9b7011b1801b38/jetified-firebase-datatransport-18.1.1/AndroidManifest.xml:28:13-30:85
+84                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+84-->[com.google.firebase:firebase-datatransport:18.1.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/6a19fc30f950da5f3a9b7011b1801b38/jetified-firebase-datatransport-18.1.1/AndroidManifest.xml:29:17-115
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.firebase:firebase-datatransport:18.1.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/6a19fc30f950da5f3a9b7011b1801b38/jetified-firebase-datatransport-18.1.1/AndroidManifest.xml:30:17-82
+86            <meta-data
+86-->[com.google.firebase:firebase-installations:17.0.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/d575652e0196f6e060dfc7efd05108d5/jetified-firebase-installations-17.0.1/AndroidManifest.xml:18:13-20:85
+87                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+87-->[com.google.firebase:firebase-installations:17.0.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/d575652e0196f6e060dfc7efd05108d5/jetified-firebase-installations-17.0.1/AndroidManifest.xml:19:17-127
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-installations:17.0.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/d575652e0196f6e060dfc7efd05108d5/jetified-firebase-installations-17.0.1/AndroidManifest.xml:20:17-82
+89        </service>
+90
+91        <provider
+91-->[androidx.camera:camera-camera2:1.0.0-alpha05] /home/nikola/.gradle/caches/transforms-2/files-2.1/03e258dd1a54bb78b5d34876ddcad997/jetified-camera-camera2-1.0.0-alpha05/AndroidManifest.xml:25:9-30:43
+92            android:name="androidx.camera.camera2.impl.Camera2Initializer"
+92-->[androidx.camera:camera-camera2:1.0.0-alpha05] /home/nikola/.gradle/caches/transforms-2/files-2.1/03e258dd1a54bb78b5d34876ddcad997/jetified-camera-camera2-1.0.0-alpha05/AndroidManifest.xml:26:13-75
+93            android:authorities="org.pytorch.demo.objectdetection.camerax-init"
+93-->[androidx.camera:camera-camera2:1.0.0-alpha05] /home/nikola/.gradle/caches/transforms-2/files-2.1/03e258dd1a54bb78b5d34876ddcad997/jetified-camera-camera2-1.0.0-alpha05/AndroidManifest.xml:27:13-64
+94            android:exported="false"
+94-->[androidx.camera:camera-camera2:1.0.0-alpha05] /home/nikola/.gradle/caches/transforms-2/files-2.1/03e258dd1a54bb78b5d34876ddcad997/jetified-camera-camera2-1.0.0-alpha05/AndroidManifest.xml:28:13-37
+95            android:initOrder="100"
+95-->[androidx.camera:camera-camera2:1.0.0-alpha05] /home/nikola/.gradle/caches/transforms-2/files-2.1/03e258dd1a54bb78b5d34876ddcad997/jetified-camera-camera2-1.0.0-alpha05/AndroidManifest.xml:29:13-36
+96            android:multiprocess="true" /> <!-- Needs to be explicitly declared on P+ -->
+96-->[androidx.camera:camera-camera2:1.0.0-alpha05] /home/nikola/.gradle/caches/transforms-2/files-2.1/03e258dd1a54bb78b5d34876ddcad997/jetified-camera-camera2-1.0.0-alpha05/AndroidManifest.xml:30:13-40
+97        <uses-library
+97-->[com.google.android.gms:play-services-maps:17.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/7752dcb5f35954b62a1d54735ffd34b4/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+98            android:name="org.apache.http.legacy"
+98-->[com.google.android.gms:play-services-maps:17.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/7752dcb5f35954b62a1d54735ffd34b4/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+99            android:required="false" />
+99-->[com.google.android.gms:play-services-maps:17.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/7752dcb5f35954b62a1d54735ffd34b4/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+100
+101        <activity
+101-->[com.google.android.gms:play-services-base:17.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/a1794986c7a3c4986f9feb2359005476/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+102            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+102-->[com.google.android.gms:play-services-base:17.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/a1794986c7a3c4986f9feb2359005476/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+103            android:exported="false"
+103-->[com.google.android.gms:play-services-base:17.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/a1794986c7a3c4986f9feb2359005476/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+104            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+104-->[com.google.android.gms:play-services-base:17.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/a1794986c7a3c4986f9feb2359005476/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+105
+106        <provider
+106-->[com.google.firebase:firebase-common:20.1.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/149d1aab705d9370b7ca2ca4b8cf64a2/jetified-firebase-common-20.1.0/AndroidManifest.xml:26:9-31:39
+107            android:name="com.google.firebase.provider.FirebaseInitProvider"
+107-->[com.google.firebase:firebase-common:20.1.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/149d1aab705d9370b7ca2ca4b8cf64a2/jetified-firebase-common-20.1.0/AndroidManifest.xml:27:13-77
+108            android:authorities="org.pytorch.demo.objectdetection.firebaseinitprovider"
+108-->[com.google.firebase:firebase-common:20.1.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/149d1aab705d9370b7ca2ca4b8cf64a2/jetified-firebase-common-20.1.0/AndroidManifest.xml:28:13-72
+109            android:directBootAware="true"
+109-->[com.google.firebase:firebase-common:20.1.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/149d1aab705d9370b7ca2ca4b8cf64a2/jetified-firebase-common-20.1.0/AndroidManifest.xml:29:13-43
+110            android:exported="false"
+110-->[com.google.firebase:firebase-common:20.1.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/149d1aab705d9370b7ca2ca4b8cf64a2/jetified-firebase-common-20.1.0/AndroidManifest.xml:30:13-37
+111            android:initOrder="100" />
+111-->[com.google.firebase:firebase-common:20.1.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/149d1aab705d9370b7ca2ca4b8cf64a2/jetified-firebase-common-20.1.0/AndroidManifest.xml:31:13-36
+112
+113        <meta-data
+113-->[com.google.android.gms:play-services-basement:18.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/c158dbe6bad5056979dbf1ee0625408f/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+114            android:name="com.google.android.gms.version"
+114-->[com.google.android.gms:play-services-basement:18.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/c158dbe6bad5056979dbf1ee0625408f/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+115            android:value="@integer/google_play_services_version" />
+115-->[com.google.android.gms:play-services-basement:18.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/c158dbe6bad5056979dbf1ee0625408f/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+116
+117        <uses-library
+117-->[androidx.window:window:1.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/1d260e33e0d3bd5cca81bd30a9945419/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+118            android:name="androidx.window.extensions"
+118-->[androidx.window:window:1.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/1d260e33e0d3bd5cca81bd30a9945419/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+119            android:required="false" />
+119-->[androidx.window:window:1.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/1d260e33e0d3bd5cca81bd30a9945419/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+120        <uses-library
+120-->[androidx.window:window:1.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/1d260e33e0d3bd5cca81bd30a9945419/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+121            android:name="androidx.window.sidecar"
+121-->[androidx.window:window:1.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/1d260e33e0d3bd5cca81bd30a9945419/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+122            android:required="false" />
+122-->[androidx.window:window:1.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/1d260e33e0d3bd5cca81bd30a9945419/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+123
+124        <service
+124-->[com.google.android.datatransport:transport-backend-cct:3.1.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/fc9bbb02a1046c309c45172c9f606ff1/jetified-transport-backend-cct-3.1.1/AndroidManifest.xml:29:9-35:19
+125            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+125-->[com.google.android.datatransport:transport-backend-cct:3.1.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/fc9bbb02a1046c309c45172c9f606ff1/jetified-transport-backend-cct-3.1.1/AndroidManifest.xml:30:13-103
+126            android:exported="false" >
+126-->[com.google.android.datatransport:transport-backend-cct:3.1.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/fc9bbb02a1046c309c45172c9f606ff1/jetified-transport-backend-cct-3.1.1/AndroidManifest.xml:31:13-37
+127            <meta-data
+127-->[com.google.android.datatransport:transport-backend-cct:3.1.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/fc9bbb02a1046c309c45172c9f606ff1/jetified-transport-backend-cct-3.1.1/AndroidManifest.xml:32:13-34:39
+128                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+128-->[com.google.android.datatransport:transport-backend-cct:3.1.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/fc9bbb02a1046c309c45172c9f606ff1/jetified-transport-backend-cct-3.1.1/AndroidManifest.xml:33:17-94
+129                android:value="cct" />
+129-->[com.google.android.datatransport:transport-backend-cct:3.1.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/fc9bbb02a1046c309c45172c9f606ff1/jetified-transport-backend-cct-3.1.1/AndroidManifest.xml:34:17-36
+130        </service>
+131        <service
+131-->[com.google.android.datatransport:transport-runtime:3.1.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/8fa3279f3c03a6a08a7e8d3366e3270a/jetified-transport-runtime-3.1.1/AndroidManifest.xml:26:9-30:19
+132            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+132-->[com.google.android.datatransport:transport-runtime:3.1.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/8fa3279f3c03a6a08a7e8d3366e3270a/jetified-transport-runtime-3.1.1/AndroidManifest.xml:27:13-117
+133            android:exported="false"
+133-->[com.google.android.datatransport:transport-runtime:3.1.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/8fa3279f3c03a6a08a7e8d3366e3270a/jetified-transport-runtime-3.1.1/AndroidManifest.xml:28:13-37
+134            android:permission="android.permission.BIND_JOB_SERVICE" >
+134-->[com.google.android.datatransport:transport-runtime:3.1.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/8fa3279f3c03a6a08a7e8d3366e3270a/jetified-transport-runtime-3.1.1/AndroidManifest.xml:29:13-69
+135        </service>
+136
+137        <receiver
+137-->[com.google.android.datatransport:transport-runtime:3.1.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/8fa3279f3c03a6a08a7e8d3366e3270a/jetified-transport-runtime-3.1.1/AndroidManifest.xml:32:9-34:40
+138            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+138-->[com.google.android.datatransport:transport-runtime:3.1.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/8fa3279f3c03a6a08a7e8d3366e3270a/jetified-transport-runtime-3.1.1/AndroidManifest.xml:33:13-132
+139            android:exported="false" />
+139-->[com.google.android.datatransport:transport-runtime:3.1.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/8fa3279f3c03a6a08a7e8d3366e3270a/jetified-transport-runtime-3.1.1/AndroidManifest.xml:34:13-37
+140    </application>
+141
+142</manifest>

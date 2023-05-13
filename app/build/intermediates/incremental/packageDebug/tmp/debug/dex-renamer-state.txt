@@ -1,0 +1,13 @@
+#Sat May 13 22:23:19 CEST 2023
+path.3=classes3.dex
+path.2=classes2.dex
+path.1=classes.dex
+path.0=classes.dex
+base.3=/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
+base.2=/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+base.1=/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
+base.0=/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
