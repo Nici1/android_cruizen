@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -37,6 +38,9 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final RelativeLayout loginLayout;
 
   @NonNull
+  public final ImageView myImageView;
+
+  @NonNull
   public final EditText passwordField;
 
   @NonNull
@@ -45,14 +49,15 @@ public final class ActivityLoginBinding implements ViewBinding {
   private ActivityLoginBinding(@NonNull RelativeLayout rootView,
       @NonNull BottomBarBinding bottomBar, @NonNull LinearLayout contentLayout,
       @NonNull EditText emailField, @NonNull Button loginButton,
-      @NonNull RelativeLayout loginLayout, @NonNull EditText passwordField,
-      @NonNull TextView registerLink) {
+      @NonNull RelativeLayout loginLayout, @NonNull ImageView myImageView,
+      @NonNull EditText passwordField, @NonNull TextView registerLink) {
     this.rootView = rootView;
     this.bottomBar = bottomBar;
     this.contentLayout = contentLayout;
     this.emailField = emailField;
     this.loginButton = loginButton;
     this.loginLayout = loginLayout;
+    this.myImageView = myImageView;
     this.passwordField = passwordField;
     this.registerLink = registerLink;
   }
@@ -111,6 +116,12 @@ public final class ActivityLoginBinding implements ViewBinding {
 
       RelativeLayout loginLayout = (RelativeLayout) rootView;
 
+      id = R.id.my_image_view;
+      ImageView myImageView = rootView.findViewById(id);
+      if (myImageView == null) {
+        break missingId;
+      }
+
       id = R.id.password_field;
       EditText passwordField = rootView.findViewById(id);
       if (passwordField == null) {
@@ -124,7 +135,7 @@ public final class ActivityLoginBinding implements ViewBinding {
       }
 
       return new ActivityLoginBinding((RelativeLayout) rootView, binding_bottomBar, contentLayout,
-          emailField, loginButton, loginLayout, passwordField, registerLink);
+          emailField, loginButton, loginLayout, myImageView, passwordField, registerLink);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

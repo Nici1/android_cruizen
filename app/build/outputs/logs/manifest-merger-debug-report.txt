@@ -18,6 +18,7 @@ MERGED from [androidx.camera:camera-camera2:1.0.0-alpha05] /home/nikola/.gradle/
 MERGED from [androidx.camera:camera-core:1.0.0-alpha05] /home/nikola/.gradle/caches/transforms-2/files-2.1/04356b1eac277301f3beecc1c03d21d1/jetified-camera-core-1.0.0-alpha05/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/7752dcb5f35954b62a1d54735ffd34b4/jetified-play-services-maps-17.0.0/AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/9fc19bc18885249ef1a460bfbf368363/jetified-play-services-location-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.volley:volley:1.2.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/a8035a34d0c6cc62a5dfdbeda55bc020/jetified-volley-1.2.1/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/7c0677be8011741026309ef690a9f4db/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/ee9b51f71825564f346013ea1d4d0318/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/e491b027066b482b439af311917e1339/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -275,6 +276,8 @@ MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/nikola/.gra
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/7752dcb5f35954b62a1d54735ffd34b4/jetified-play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/9fc19bc18885249ef1a460bfbf368363/jetified-play-services-location-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/9fc19bc18885249ef1a460bfbf368363/jetified-play-services-location-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.android.volley:volley:1.2.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/a8035a34d0c6cc62a5dfdbeda55bc020/jetified-volley-1.2.1/AndroidManifest.xml:5:5-43
+MERGED from [com.android.volley:volley:1.2.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/a8035a34d0c6cc62a5dfdbeda55bc020/jetified-volley-1.2.1/AndroidManifest.xml:5:5-43
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/7c0677be8011741026309ef690a9f4db/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/7c0677be8011741026309ef690a9f4db/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/ee9b51f71825564f346013ea1d4d0318/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41

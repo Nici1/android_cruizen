@@ -50,7 +50,7 @@ public class RegisterActivity extends AppCompatActivity {
         mEmailField = findViewById(R.id.email_field);
         mPasswordField = findViewById(R.id.password_field);
         mRegisterButton = findViewById(R.id.register_button);
-        mRegisterLink = findViewById(R.id.register_link);
+        mRegisterLink = findViewById(R.id.login_link);
 
         mRegisterLink.setOnClickListener(new View.OnClickListener() {
             @Override

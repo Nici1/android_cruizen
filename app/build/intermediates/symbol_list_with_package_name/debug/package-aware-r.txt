@@ -1772,6 +1772,8 @@ drawable abc_vector_test
 drawable avatar
 drawable avd_hide_password
 drawable avd_show_password
+drawable background_background
+drawable background_theme
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1780,6 +1782,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable camera_svgrepo_com
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1804,6 +1807,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable edit_text
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_clock_black_24dp
@@ -1851,6 +1855,7 @@ drawable test_custom_background
 drawable tile_icon
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable white_rectangle
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -2082,6 +2087,7 @@ id liveButton
 id locale
 id login_button
 id login_layout
+id login_link
 id ltr
 id map
 id map_button
@@ -2139,6 +2145,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id my_image_view
 id name_field
 id nav_controller_view_tag
 id nav_graph
@@ -2490,7 +2497,11 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 layout texture_view
+mipmap background
+mipmap background_foreground
+mipmap background_round
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 navigation nav_graph
 navigation nav_graph2

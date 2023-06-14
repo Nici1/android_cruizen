@@ -13,12 +13,15 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.RectF;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 import java.util.ArrayList;
 
 
 public class ResultView extends View {
+
+    String detectables [] = {"person", "car", "cat", "dog", "truck", "bus"};
 
     private final static int TEXT_X = 40;
     private final static int TEXT_Y = 35;
@@ -44,8 +47,13 @@ public class ResultView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
+
+
         if (mResults == null) return;
         for (Result result : mResults) {
+
+            if (result.rect == null) continue;
+
             mPaintRectangle.setStrokeWidth(5);
             mPaintRectangle.setStyle(Paint.Style.STROKE);
             canvas.drawRect(result.rect, mPaintRectangle);
@@ -60,6 +68,8 @@ public class ResultView extends View {
             mPaintText.setStrokeWidth(0);
             mPaintText.setStyle(Paint.Style.FILL);
             mPaintText.setTextSize(32);
+           // Log.i("class", PrePostProcessor.mClasses[result.classIndex] );
+
             canvas.drawText(String.format("%s %.2f", PrePostProcessor.mClasses[result.classIndex], result.score), result.rect.left + TEXT_X, result.rect.top + TEXT_Y, mPaintText);
         }
     }

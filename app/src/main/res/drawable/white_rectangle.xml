@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="#FFFFFF" /> <!-- Fill color of the white rectangle -->
+        <corners android:radius="16dp" /> <!-- Radius for rounded corners (optional) -->
+    </shape>
+
+
+
+

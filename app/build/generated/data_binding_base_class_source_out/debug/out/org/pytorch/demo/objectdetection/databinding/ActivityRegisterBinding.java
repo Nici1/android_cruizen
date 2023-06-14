@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -31,6 +32,12 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final EditText emailField;
 
   @NonNull
+  public final TextView loginLink;
+
+  @NonNull
+  public final ImageView myImageView;
+
+  @NonNull
   public final EditText nameField;
 
   @NonNull
@@ -42,23 +49,21 @@ public final class ActivityRegisterBinding implements ViewBinding {
   @NonNull
   public final RelativeLayout registerLayout;
 
-  @NonNull
-  public final TextView registerLink;
-
   private ActivityRegisterBinding(@NonNull RelativeLayout rootView,
       @NonNull BottomBarBinding bottomBar, @NonNull LinearLayout contentLayout,
-      @NonNull EditText emailField, @NonNull EditText nameField, @NonNull EditText passwordField,
-      @NonNull Button registerButton, @NonNull RelativeLayout registerLayout,
-      @NonNull TextView registerLink) {
+      @NonNull EditText emailField, @NonNull TextView loginLink, @NonNull ImageView myImageView,
+      @NonNull EditText nameField, @NonNull EditText passwordField, @NonNull Button registerButton,
+      @NonNull RelativeLayout registerLayout) {
     this.rootView = rootView;
     this.bottomBar = bottomBar;
     this.contentLayout = contentLayout;
     this.emailField = emailField;
+    this.loginLink = loginLink;
+    this.myImageView = myImageView;
     this.nameField = nameField;
     this.passwordField = passwordField;
     this.registerButton = registerButton;
     this.registerLayout = registerLayout;
-    this.registerLink = registerLink;
   }
 
   @Override
@@ -107,6 +112,18 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.login_link;
+      TextView loginLink = rootView.findViewById(id);
+      if (loginLink == null) {
+        break missingId;
+      }
+
+      id = R.id.my_image_view;
+      ImageView myImageView = rootView.findViewById(id);
+      if (myImageView == null) {
+        break missingId;
+      }
+
       id = R.id.name_field;
       EditText nameField = rootView.findViewById(id);
       if (nameField == null) {
@@ -127,15 +144,9 @@ public final class ActivityRegisterBinding implements ViewBinding {
 
       RelativeLayout registerLayout = (RelativeLayout) rootView;
 
-      id = R.id.register_link;
-      TextView registerLink = rootView.findViewById(id);
-      if (registerLink == null) {
-        break missingId;
-      }
-
       return new ActivityRegisterBinding((RelativeLayout) rootView, binding_bottomBar,
-          contentLayout, emailField, nameField, passwordField, registerButton, registerLayout,
-          registerLink);
+          contentLayout, emailField, loginLink, myImageView, nameField, passwordField,
+          registerButton, registerLayout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
