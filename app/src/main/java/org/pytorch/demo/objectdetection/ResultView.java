@@ -21,7 +21,7 @@ import java.util.ArrayList;
 
 public class ResultView extends View {
 
-    String detectables [] = {"person", "car", "cat", "dog", "truck", "bus"};
+
 
     private final static int TEXT_X = 40;
     private final static int TEXT_Y = 35;
@@ -68,7 +68,9 @@ public class ResultView extends View {
             mPaintText.setStrokeWidth(0);
             mPaintText.setStyle(Paint.Style.FILL);
             mPaintText.setTextSize(32);
-           // Log.i("class", PrePostProcessor.mClasses[result.classIndex] );
+            Log.i("class", String.valueOf(result.classIndex));
+
+
 
             canvas.drawText(String.format("%s %.2f", PrePostProcessor.mClasses[result.classIndex], result.score), result.rect.left + TEXT_X, result.rect.top + TEXT_Y, mPaintText);
         }

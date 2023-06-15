@@ -4,6 +4,7 @@ package org.pytorch.demo.objectdetection.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -20,10 +21,14 @@ public final class ActivityMapsBinding implements ViewBinding {
   @NonNull
   public final BottomBarBinding bottomBar;
 
+  @NonNull
+  public final Button send;
+
   private ActivityMapsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull BottomBarBinding bottomBar) {
+      @NonNull BottomBarBinding bottomBar, @NonNull Button send) {
     this.rootView = rootView;
     this.bottomBar = bottomBar;
+    this.send = send;
   }
 
   @Override
@@ -60,7 +65,13 @@ public final class ActivityMapsBinding implements ViewBinding {
       }
       BottomBarBinding binding_bottomBar = BottomBarBinding.bind(bottomBar);
 
-      return new ActivityMapsBinding((ConstraintLayout) rootView, binding_bottomBar);
+      id = R.id.send;
+      Button send = rootView.findViewById(id);
+      if (send == null) {
+        break missingId;
+      }
+
+      return new ActivityMapsBinding((ConstraintLayout) rootView, binding_bottomBar, send);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

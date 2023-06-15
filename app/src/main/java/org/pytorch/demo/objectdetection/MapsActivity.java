@@ -1,6 +1,8 @@
 package org.pytorch.demo.objectdetection;
 
 import android.Manifest;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.location.Location;
@@ -50,6 +52,8 @@ public class MapsActivity extends BottomBarActivity implements OnMapReadyCallbac
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1;
     private FusedLocationProviderClient fusedLocationProviderClient;
 
+    Button send;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,10 +65,13 @@ public class MapsActivity extends BottomBarActivity implements OnMapReadyCallbac
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-
-
-
-
+        send = findViewById(R.id.send);
+        send.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendLocationDataToServer();
+            }
+        });
         setBottomBar();
     }
 
@@ -151,7 +158,7 @@ public class MapsActivity extends BottomBarActivity implements OnMapReadyCallbac
 
 
 
-    private void sendLocationDataToServer() {
+     void sendLocationDataToServer() {
         // Check if location permission is granted
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             // Location permission is granted, proceed with sending location data
@@ -163,7 +170,7 @@ public class MapsActivity extends BottomBarActivity implements OnMapReadyCallbac
     }
 
 
-    private void sendLocationData() {
+    public void sendLocationData() {
         // Get the current location
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // Permission should have been granted at this point, but it's always good to check again
@@ -228,9 +235,12 @@ public class MapsActivity extends BottomBarActivity implements OnMapReadyCallbac
 
                         @Override
                         public Map<String, String> getHeaders() throws AuthFailureError {
-                            // Add any required headers to the request (e.g., authentication tokens)
+                            // Add the token to the request headers
+                            SharedPreferences sharedPreferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
+                            String token = sharedPreferences.getString("authToken", "");
                             Map<String, String> headers = new HashMap<>();
                             headers.put("Content-Type", "application/json");
+                            headers.put("Authorization", "Bearer " + token);
                             return headers;
                         }
                     };
@@ -243,6 +253,8 @@ public class MapsActivity extends BottomBarActivity implements OnMapReadyCallbac
             }
         });
     }
+
+
 
 
 

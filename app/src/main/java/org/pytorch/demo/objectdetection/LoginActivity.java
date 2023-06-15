@@ -1,6 +1,7 @@
 package org.pytorch.demo.objectdetection;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -109,6 +110,16 @@ public class LoginActivity extends BottomBarActivity {
                     String responseBody = response.body().string();
                     ApiResponse apiResponse = mGson.fromJson(responseBody, ApiResponse.class);
                     if (apiResponse.isSuccess()) {
+                        String token = getToken(response);
+
+                        if(token != null) {
+                            // Store the authentication token in session or storage
+                            // For example, using SharedPreferences:
+                            SharedPreferences sharedPreferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
+                            sharedPreferences.edit().putString("authToken", token).apply();
+                            Log.i("Token", token);
+
+                        }
                         runOnUiThread(() -> {
                             Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
                             // Start the main activity
@@ -124,7 +135,23 @@ public class LoginActivity extends BottomBarActivity {
 
     }
 
+    private String getToken(Response response) {
+        Headers headers = response.headers();
+        if (headers != null) {
+            String tokenHeader = headers.get("Set-Cookie");
+            String[] parts = tokenHeader.split(";");
 
+            // Extract the token value from the first part
+            String tokenValue = parts[0].split("=")[1];
+
+            // Trim any leading or trailing spaces
+            tokenValue = tokenValue.trim();
+            return tokenValue;
+
+
+        }
+        return null;
+    }
 
 
 

@@ -43,7 +43,7 @@ public class PrePostProcessor {
 
     static String[] mClasses;
 
-    // The two methods nonMaxSuppression and IOU below are ported from https://github.com/hollance/YOLO-CoreML-MPSNNGraph/blob/master/Common/Helpers.swift
+
     /**
      Removes bounding boxes that overlap too much with other boxes that have
      a higher score.
@@ -119,6 +119,7 @@ public class PrePostProcessor {
 
     static ArrayList<Result> outputsToNMSPredictions(float[] outputs, float imgScaleX, float imgScaleY, float ivScaleX, float ivScaleY, float startX, float startY) {
         ArrayList<Result> results = new ArrayList<>();
+
         for (int i = 0; i< mOutputRow; i++) {
             if (outputs[i* mOutputColumn +4] > mThreshold) {
                 float x = outputs[i* mOutputColumn];
@@ -140,10 +141,15 @@ public class PrePostProcessor {
                     }
                 }
 
-                Rect rect = new Rect((int)(startX+ivScaleX*left), (int)(startY+top*ivScaleY), (int)(startX+ivScaleX*right), (int)(startY+ivScaleY*bottom));
-                Result result = new Result(cls, outputs[i*mOutputColumn+4], rect);
+                if(mClasses[cls].equals("person") || mClasses[cls].equals("bicycle") || mClasses[cls].equals("dog") ||
+                        mClasses[cls].equals("cat") || mClasses[cls].equals("truck") || mClasses[cls].equals("fire hydrant") || mClasses[cls].equals("stop sign")
+                        || mClasses[cls].equals("traffic light") || mClasses[cls].equals("car")){
+                    Rect rect = new Rect((int)(startX+ivScaleX*left), (int)(startY+top*ivScaleY), (int)(startX+ivScaleX*right), (int)(startY+ivScaleY*bottom));
+                    Result result = new Result(cls, outputs[i*mOutputColumn+4], rect);
 
-                results.add(result);
+                    results.add(result);
+                }
+
             }
         }
         return nonMaxSuppression(results, mNmsLimit, mThreshold);
