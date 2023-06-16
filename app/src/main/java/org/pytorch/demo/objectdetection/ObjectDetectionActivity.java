@@ -405,7 +405,7 @@ public class ObjectDetectionActivity extends AbstractCameraXActivity<ObjectDetec
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Intent intent = new Intent(ObjectDetectionActivity.this, LoginActivity.class);
+                final Intent intent = new Intent(ObjectDetectionActivity.this, infoActivity.class);
                 startActivity(intent);
             }
         });

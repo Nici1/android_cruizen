@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:2:1-55:12
+ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:2:1-63:12
 MERGED from [androidx.databinding:viewbinding:4.0.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/5dd45fc0af2ed6a6165fc80ea1f24b08/jetified-viewbinding-4.0.1/AndroidManifest.xml:17:1-22:12
 MERGED from [org.pytorch:pytorch_android_torchvision_lite:1.10.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/c3413e8e2375d4cf5fe7c6f656ebab40/jetified-pytorch_android_torchvision_lite-1.10.0/AndroidManifest.xml:2:1-10:12
 MERGED from [org.pytorch:pytorch_android_lite:1.10.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/3249fbc5e0c117f48a425313b9f4de2e/jetified-pytorch_android_lite-1.10.0/AndroidManifest.xml:2:1-10:12
@@ -19,6 +19,7 @@ MERGED from [androidx.camera:camera-core:1.0.0-alpha05] /home/nikola/.gradle/cac
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/7752dcb5f35954b62a1d54735ffd34b4/jetified-play-services-maps-17.0.0/AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/9fc19bc18885249ef1a460bfbf368363/jetified-play-services-location-17.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.android.volley:volley:1.2.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/a8035a34d0c6cc62a5dfdbeda55bc020/jetified-volley-1.2.1/AndroidManifest.xml:2:1-7:12
+MERGED from [com.github.lecho:hellocharts-library:1.5.8] /home/nikola/.gradle/caches/transforms-2/files-2.1/db4bd4585f034845307d7a28976e7e7d/jetified-hellocharts-library-1.5.8/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/7c0677be8011741026309ef690a9f4db/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/ee9b51f71825564f346013ea1d4d0318/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/e491b027066b482b439af311917e1339/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -81,20 +82,20 @@ MERGED from [androidx.tracing:tracing:1.0.0] /home/nikola/.gradle/caches/transfo
 MERGED from [androidx.annotation:annotation-experimental:1.2.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/785da7aa3c75000552794cac2cd2bef0/jetified-annotation-experimental-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/c61aee2ebbedf51a31845c56870147a7/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /home/nikola/.gradle/caches/transforms-2/files-2.1/0f1f3652b3a36c1dae436a2d2ec7a862/jetified-rxandroid-2.0.2/AndroidManifest.xml:15:1-21:12
-INJECTED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:2:1-63:12
 	package
 		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:3:5-47
 		INJECTED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml
 		INJECTED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:2:1-55:12
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:2:1-63:12
 		INJECTED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:2:1-55:12
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:2:1-63:12
 		INJECTED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:2:11-69
@@ -127,7 +128,7 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.1] /home
 	android:name
 		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:9:22-64
 application
-ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:11:5-53:19
+ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:11:5-61:19
 MERGED from [com.google.android.material:material:1.4.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/43a470e64c0b59182e5e2d5487691e11/material-1.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/43a470e64c0b59182e5e2d5487691e11/material-1.4.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/nikola/.gradle/caches/transforms-2/files-2.1/cdaa83194e29814d01eb1fc6312e9c9a/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
@@ -182,72 +183,88 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/nikol
 		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:16:9-40
 	android:usesCleartextTraffic
 		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:17:9-44
-activity#org.pytorch.demo.objectdetection.RegisterActivity
+activity#org.pytorch.demo.objectdetection.DataActivity
 ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:18:9-22:59
 	android:label
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:21:13-60
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:21:13-56
 	android:exported
 		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:20:13-37
 	android:theme
 		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:22:13-56
 	android:name
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:19:13-45
-activity#org.pytorch.demo.objectdetection.LoginActivity
-ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:23:9-27:59
-	android:label
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:26:13-57
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:19:13-41
+activity#org.pytorch.demo.objectdetection.infoActivity
+ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:23:9-25:40
 	android:exported
 		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:24:13-41
+activity#org.pytorch.demo.objectdetection.RegisterActivity
+ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:26:9-30:59
+	android:label
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:29:13-60
+	android:exported
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:28:13-37
 	android:theme
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:27:13-56
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:30:13-56
 	android:name
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:24:13-42
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:27:13-45
+activity#org.pytorch.demo.objectdetection.LoginActivity
+ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:31:9-35:59
+	android:label
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:34:13-57
+	android:exported
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:33:13-37
+	android:theme
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:35:13-56
+	android:name
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:32:13-42
 activity#org.pytorch.demo.objectdetection.ProfileActivity
-ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:28:9-30:39
+ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:36:9-38:39
 	android:exported
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:30:13-36
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:38:13-36
 	android:name
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:29:13-44
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:37:13-44
 activity#org.pytorch.demo.objectdetection.MapsActivity
-ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:31:9-33:39
+ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:39:9-41:39
 	android:exported
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:33:13-36
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:41:13-36
 	android:name
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:32:13-41
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:40:13-41
 activity#org.pytorch.demo.objectdetection.MainActivity
-ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:34:9-44:20
+ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:42:9-52:20
 	android:screenOrientation
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:38:13-49
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:46:13-49
 	android:exported
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:37:13-36
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:45:13-36
 	android:configChanges
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:36:13-48
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:44:13-48
 	android:name
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:35:13-41
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:43:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:39:13-43:29
+ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:47:13-51:29
 action#android.intent.action.MAIN
-ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:40:17-69
+ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:48:17-69
 	android:name
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:40:25-66
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:48:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:42:17-77
+ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:50:17-77
 	android:name
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:42:27-74
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:50:27-74
 activity#org.pytorch.demo.objectdetection.ObjectDetectionActivity
-ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:45:9-48:52
+ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:53:9-56:52
 	android:screenOrientation
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:48:13-49
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:56:13-49
 	android:configChanges
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:47:13-48
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:55:13-48
 	android:name
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:46:13-52
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:54:13-52
 meta-data#com.google.android.geo.API_KEY
-ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:50:9-52:71
+ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:58:9-60:71
 	android:value
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:52:13-68
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:60:13-68
 	android:name
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:51:13-58
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:59:13-58
 uses-sdk
 INJECTED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml
@@ -282,6 +299,8 @@ MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/nikola/
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/9fc19bc18885249ef1a460bfbf368363/jetified-play-services-location-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.android.volley:volley:1.2.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/a8035a34d0c6cc62a5dfdbeda55bc020/jetified-volley-1.2.1/AndroidManifest.xml:5:5-43
 MERGED from [com.android.volley:volley:1.2.1] /home/nikola/.gradle/caches/transforms-2/files-2.1/a8035a34d0c6cc62a5dfdbeda55bc020/jetified-volley-1.2.1/AndroidManifest.xml:5:5-43
+MERGED from [com.github.lecho:hellocharts-library:1.5.8] /home/nikola/.gradle/caches/transforms-2/files-2.1/db4bd4585f034845307d7a28976e7e7d/jetified-hellocharts-library-1.5.8/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.lecho:hellocharts-library:1.5.8] /home/nikola/.gradle/caches/transforms-2/files-2.1/db4bd4585f034845307d7a28976e7e7d/jetified-hellocharts-library-1.5.8/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/7c0677be8011741026309ef690a9f4db/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/7c0677be8011741026309ef690a9f4db/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/nikola/.gradle/caches/transforms-2/files-2.1/ee9b51f71825564f346013ea1d4d0318/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41

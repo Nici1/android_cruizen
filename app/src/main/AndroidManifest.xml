@@ -16,6 +16,14 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".DataActivity"
+            android:exported="false"
+            android:label="@string/title_activity_data"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".infoActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false"
             android:label="@string/title_activity_register"

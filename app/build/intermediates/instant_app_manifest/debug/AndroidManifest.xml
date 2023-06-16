@@ -38,6 +38,14 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="org.pytorch.demo.objectdetection.DataActivity"
+            android:exported="false"
+            android:label="@string/title_activity_data"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="org.pytorch.demo.objectdetection.infoActivity"
+            android:exported="false" />
+        <activity
             android:name="org.pytorch.demo.objectdetection.RegisterActivity"
             android:exported="false"
             android:label="@string/title_activity_register"

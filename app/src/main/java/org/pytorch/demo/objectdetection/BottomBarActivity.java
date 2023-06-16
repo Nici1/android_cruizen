@@ -18,7 +18,7 @@ public class BottomBarActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Intent intent = new Intent(BottomBarActivity.this, LoginActivity.class);
+                final Intent intent = new Intent(BottomBarActivity.this, infoActivity.class);
                 startActivity(intent);
             }
         });
@@ -35,6 +35,7 @@ public class BottomBarActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 final Intent intent = new Intent(BottomBarActivity.this, MapsActivity.class);
+
                 startActivity(intent);
             }
         });

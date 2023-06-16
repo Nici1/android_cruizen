@@ -23,5 +23,6 @@
     <string name="email" />
     <string name="error_field_required">email_or_pass_error</string>
     <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_data">DataActivity</string>
 
 </resources>

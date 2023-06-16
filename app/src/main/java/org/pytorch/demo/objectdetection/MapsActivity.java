@@ -7,6 +7,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.location.Location;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -35,6 +36,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -49,29 +51,28 @@ import java.util.Map;
 public class MapsActivity extends BottomBarActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+
+
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1;
     private FusedLocationProviderClient fusedLocationProviderClient;
 
-    Button send;
+    Button b;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
 
+
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
+        displayPoints();
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        send = findViewById(R.id.send);
-        send.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                sendLocationDataToServer();
-            }
-        });
+
+
         setBottomBar();
     }
 
@@ -114,8 +115,7 @@ public class MapsActivity extends BottomBarActivity implements OnMapReadyCallbac
                                 .title("My Location"));
                         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 15f));
 
-                        // Fetch and display the user's posts and other users' posts within 24 hours
-                        fetchAndDisplayPosts(currentLocation);
+
                     } else {
                         Toast.makeText(MapsActivity.this, "Unable to get current location", Toast.LENGTH_SHORT).show();
                     }
@@ -127,133 +127,96 @@ public class MapsActivity extends BottomBarActivity implements OnMapReadyCallbac
         }
     }
 
-    private void fetchAndDisplayPosts(LatLng currentLocation) {
-        // TODO: Implement the logic to fetch the posts from the server within a 24-hour period
-        // You can use an API call or database query to retrieve the posts
+    private void displayDetections(int detections [], double coordinates []) {
 
-        // Example code to add a sample post marker
-        LatLng postLocation = new LatLng(37.7749, -122.4194);
-        mMap.addMarker(new MarkerOptions()
-                .position(postLocation)
-                .title("Post Title")
-                .snippet("Post Description"));
+        String names [] = {"Person", "Car", "Bicycle", "Cat", "Dog", "Truck", "Stop sign", "Fire hydrant", "Traffic light"};
+        boolean greater_0 [] = {false, false, false, false, false, false, false, false, false};
+        float[] colors = {BitmapDescriptorFactory.HUE_AZURE, BitmapDescriptorFactory.HUE_GREEN, BitmapDescriptorFactory.HUE_YELLOW,
+                BitmapDescriptorFactory.HUE_BLUE, BitmapDescriptorFactory.HUE_ORANGE, BitmapDescriptorFactory.HUE_CYAN,
+                BitmapDescriptorFactory.HUE_VIOLET, BitmapDescriptorFactory.HUE_ROSE, BitmapDescriptorFactory.HUE_MAGENTA};
+        for(int i=0; i<detections.length; i++){
+            if (detections[i] >0){
+                greater_0[i] = true;
+            }
+        }
 
-        // Example code to add a sample user post marker
-        LatLng userPostLocation = new LatLng(37.7831, -122.4039);
-        mMap.addMarker(new MarkerOptions()
-                .position(userPostLocation)
-                .title("User Post Title")
-                .snippet("User Post Description")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
 
-        // Example code to add a circle to represent the 24-hour radius
-        CircleOptions circleOptions = new CircleOptions()
-                .center(currentLocation)
-                .radius(1000) // 1000 meters (1 km) radius
-                .strokeColor(Color.RED)
-                .strokeWidth(2)
-                .fillColor(Color.parseColor("#80FF0000")); // Translucent red
-        mMap.addCircle(circleOptions);
+
+        for(int i=0; i<detections.length; i++){
+            LatLng markerPosition = new LatLng(coordinates[1] + getRandomOffset(), coordinates[0] + getRandomOffset());
+            if (greater_0[i]) {
+                mMap.addMarker(new MarkerOptions()
+                        .position(markerPosition)
+                        .title(names[i])
+                        .icon(BitmapDescriptorFactory.defaultMarker(colors[i])));
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(markerPosition, 15f));
+            }
+        }
+
+
+    }
+
+    private double getRandomOffset() {
+        // Generate a random number between -0.0001 and 0.0001
+        double min = -0.0001;
+        double max = 0.0001;
+        return min + Math.random() * (max - min);
     }
 
 
+    void displayPoints(){
 
-     void sendLocationDataToServer() {
-        // Check if location permission is granted
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-            // Location permission is granted, proceed with sending location data
-            sendLocationData();
-        } else {
-            // Location permission is not granted, request the permission
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, LOCATION_PERMISSION_REQUEST_CODE);
-        }
-    }
-
-
-    public void sendLocationData() {
-        // Get the current location
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // Permission should have been granted at this point, but it's always good to check again
-            return;
-        }
-        fusedLocationProviderClient.getLastLocation().addOnSuccessListener(this, new OnSuccessListener<Location>() {
+        SharedPreferences sharedPreferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
+        String token = sharedPreferences.getString("authToken", "");
+        TrafficAlertApiClient.getTrafficAlerts(token, new TrafficAlertApiClient.ApiResponseListener() {
             @Override
-            public void onSuccess(Location location) {
-                if (location != null) {
-                    // Get the latitude and longitude
-                    double latitude = location.getLatitude();
-                    double longitude = location.getLongitude();
+            public void onSuccess(String response) {
+                // Handle the successful response here
+                Log.d("API", "Response: " + response);
 
-                    // Get the current date and time
-                    Calendar calendar = Calendar.getInstance();
-                    Date currentDate = calendar.getTime();
+                try {
+                    JSONObject jsonResponse = new JSONObject(response);
+                    boolean success = jsonResponse.getBoolean("success");
+                    if (success) {
+                        JSONArray data = jsonResponse.getJSONArray("data");
+                        for (int i = 0; i < data.length(); i++) {
+                            JSONObject alert = data.getJSONObject(i);
+                            JSONArray detections = alert.getJSONArray("detections");
 
-                    // Create a JSON object to hold the location and date
-                    JSONObject locationData = new JSONObject();
-                    try {
-                        locationData.put("latitude", latitude);
-                        locationData.put("longitude", longitude);
-                        locationData.put("date", currentDate.toString());
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-
-                    // Create a request queue using Volley
-                    RequestQueue requestQueue = Volley.newRequestQueue(MapsActivity.this);
-
-                    // Define the server URL where you want to send the data
-                    String serverUrl = "http://212.101.137.119:4000/traffic-alerts";
-
-                    // Create a request body with the location data
-                    final String requestBody = locationData.toString();
-
-                    // Create a POST request
-                    StringRequest stringRequest = new StringRequest(Request.Method.POST, serverUrl,
-                            new Response.Listener<String>() {
-                                @Override
-                                public void onResponse(String response) {
-                                    // Handle the response from the server
-                                    Toast.makeText(MapsActivity.this, "Location data sent successfully", Toast.LENGTH_SHORT).show();
-                                }
-                            },
-                            new Response.ErrorListener() {
-                                @Override
-                                public void onErrorResponse(VolleyError error) {
-                                    // Handle the error
-                                    Toast.makeText(MapsActivity.this, "Failed to send location data", Toast.LENGTH_SHORT).show();
-                                }
-                            }) {
-                        @Override
-                        public byte[] getBody() throws AuthFailureError {
-                            try {
-                                return requestBody.getBytes("utf-8");
-                            } catch (UnsupportedEncodingException e) {
-                                e.printStackTrace();
-                                return null;
+                            // Extract the detection values
+                            // Extract the detection values
+                            int[] detectionsArray = new int[detections.length()];
+                            for (int j = 0; j < detections.length(); j++) {
+                                detectionsArray[j] = detections.getInt(j);
                             }
-                        }
 
-                        @Override
-                        public Map<String, String> getHeaders() throws AuthFailureError {
-                            // Add the token to the request headers
-                            SharedPreferences sharedPreferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
-                            String token = sharedPreferences.getString("authToken", "");
-                            Map<String, String> headers = new HashMap<>();
-                            headers.put("Content-Type", "application/json");
-                            headers.put("Authorization", "Bearer " + token);
-                            return headers;
-                        }
-                    };
+                            double latitude = alert.getJSONArray("coordinates").getDouble(0);
+                            double longitude = alert.getJSONArray("coordinates").getDouble(1);
 
-                    // Add the request to the request queue
-                    requestQueue.add(stringRequest);
-                } else {
-                    Toast.makeText(MapsActivity.this, "Unable to get current location", Toast.LENGTH_SHORT).show();
+                            double coordinates [] = {latitude, longitude};
+                            displayDetections(detectionsArray, coordinates);
+
+                            // Use the detection values to display markers on the map with different colors
+                            // ...
+                        }
+                    } else {
+                        // Handle the case when success is false
+
+                    }
+                } catch (JSONException e) {
+                    Log.e("EXCEPTION", e.toString());
                 }
+
+            }
+
+            @Override
+            public void onFailure(String errorMessage) {
+                // Handle the failure here
+                Log.e("API", "Error: " + errorMessage);
             }
         });
-    }
 
+    }
 
 
 

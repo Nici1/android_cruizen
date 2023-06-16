@@ -122,7 +122,7 @@ public class LoginActivity extends BottomBarActivity {
                         }
                         runOnUiThread(() -> {
                             Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
-                            final Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
+                            final Intent intent = new Intent(LoginActivity.this, ObjectDetectionActivity.class);
                             startActivity(intent);
                         });
                     } else {
