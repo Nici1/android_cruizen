@@ -62,6 +62,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.CountDownLatch;
 
 public class ObjectDetectionActivity extends AbstractCameraXActivity<ObjectDetectionActivity.AnalysisResult>  {
     private Module mModule = null;
@@ -106,6 +107,7 @@ public class ObjectDetectionActivity extends AbstractCameraXActivity<ObjectDetec
         super.onPostCreate(savedInstanceState);
         setupButtonListeners();
         startDatabaseUpdateTimer();
+        Log.i("Person", String.valueOf(person));
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
     }
 
@@ -206,6 +208,7 @@ public class ObjectDetectionActivity extends AbstractCameraXActivity<ObjectDetec
                     // code block
             }
         }
+        Log.i("Person", String.valueOf(person));
 
         return new AnalysisResult(results);
     }
@@ -221,16 +224,32 @@ public class ObjectDetectionActivity extends AbstractCameraXActivity<ObjectDetec
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-                sendLocationDataToServer();
-                car=0;
-                bicycle=0;
-                cat=0;
-                dog=0;
-                truck=0;
-                stop_sign=0;
-                traffic_light=0;
-                fire_hydrant=0;
-                person=0;
+                Log.i("Person", String.valueOf(person));
+
+                // Get the current counts
+                int currentPersonCount = person;
+                int currentCarCount = car;
+                int currentBicycleCount = bicycle;
+                int currentCatCount = cat;
+                int currentDogCount = dog;
+                int currentTruckCount = truck;
+                int currentStopSignCount = stop_sign;
+                int currentTrafficLightCount = traffic_light;
+                int currentFireHydrantCount = fire_hydrant;
+
+                // Reset the variables to 0
+                car = 0;
+                bicycle = 0;
+                cat = 0;
+                dog = 0;
+                truck = 0;
+                stop_sign = 0;
+                traffic_light = 0;
+                fire_hydrant = 0;
+                person = 0;
+
+                // Call sendLocationDataToServer with the current counts
+                sendLocationDataToServer(currentPersonCount, currentCarCount, currentBicycleCount, currentCatCount, currentDogCount, currentTruckCount, currentStopSignCount, currentTrafficLightCount, currentFireHydrantCount);
 
                 // Increment the minute count
                 minuteCount++;
@@ -241,10 +260,13 @@ public class ObjectDetectionActivity extends AbstractCameraXActivity<ObjectDetec
                         // Update UI if needed
                     }
                 });
-
             }
-        }, 60 * 1000, 30 * 1000); // Delay: 1 minute, Period: 1 minute
+        }, 60 * 1000, 60 * 1000); // Delay: 1 minute, Period: 1 minute
     }
+
+
+
+
 
     @Override
     protected void onDestroy() {
@@ -253,11 +275,11 @@ public class ObjectDetectionActivity extends AbstractCameraXActivity<ObjectDetec
         timer.cancel();
     }
 
-    void sendLocationDataToServer() {
+    void sendLocationDataToServer(int currentPersonCount, int currentCarCount, int currentBicycleCount, int currentCatCount, int currentDogCount, int currentTruckCount, int currentStopSignCount, int currentTrafficLightCount, int currentFireHydrantCount) {
         // Check if location permission is granted
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             // Location permission is granted, proceed with sending location data
-            sendLocationData();
+            sendLocationData( currentPersonCount,  currentCarCount,  currentBicycleCount, currentCatCount, currentDogCount, currentTruckCount, currentStopSignCount, currentTrafficLightCount, currentFireHydrantCount);
         } else {
             // Location permission is not granted, request the permission
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, LOCATION_PERMISSION_REQUEST_CODE);
@@ -265,7 +287,7 @@ public class ObjectDetectionActivity extends AbstractCameraXActivity<ObjectDetec
     }
 
 
-    public void sendLocationData() {
+    public void sendLocationData(int currentPersonCount, int currentCarCount, int currentBicycleCount, int currentCatCount, int currentDogCount, int currentTruckCount, int currentStopSignCount, int currentTrafficLightCount, int currentFireHydrantCount) {
         // Get the current location
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // Permission should have been granted at this point, but it's always good to check again
@@ -290,17 +312,17 @@ public class ObjectDetectionActivity extends AbstractCameraXActivity<ObjectDetec
                         locationData.put("longitude", longitude);
                         locationData.put("date", currentDate.toString());
 
+                        Log.i("Person from inside", String.valueOf(person));
 
-
-                        locationData.put("person", person);
-                        locationData.put("car", car);
-                        locationData.put("bicycle", bicycle);
-                        locationData.put("cat", cat);
-                        locationData.put("dog", dog);
-                        locationData.put("truck", truck);
-                        locationData.put("stop_sign", stop_sign);
-                        locationData.put("fire_hydrant", fire_hydrant);
-                        locationData.put("traffic_light", traffic_light);
+                        locationData.put("person", currentPersonCount);
+                        locationData.put("car", currentCarCount);
+                        locationData.put("bicycle", currentBicycleCount);
+                        locationData.put("cat", currentCatCount);
+                        locationData.put("dog", currentDogCount);
+                        locationData.put("truck", currentStopSignCount);
+                        locationData.put("stop_sign", currentStopSignCount);
+                        locationData.put("fire_hydrant", currentFireHydrantCount);
+                        locationData.put("traffic_light", currentTrafficLightCount);
 
 
 
