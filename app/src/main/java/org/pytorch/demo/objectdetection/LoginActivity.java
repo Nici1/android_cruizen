@@ -59,7 +59,7 @@ public class LoginActivity extends BottomBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        setupButtonListeners();
+
 
         mEmailField = findViewById(R.id.email_field);
         mPasswordField = findViewById(R.id.password_field);
@@ -122,7 +122,8 @@ public class LoginActivity extends BottomBarActivity {
                         }
                         runOnUiThread(() -> {
                             Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
-                            // Start the main activity
+                            final Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
+                            startActivity(intent);
                         });
                     } else {
                         runOnUiThread(() -> {
@@ -153,35 +154,4 @@ public class LoginActivity extends BottomBarActivity {
         return null;
     }
 
-
-
-    private void setupButtonListeners() {
-        Button mapButton = findViewById(R.id.map_button);
-        Button loginButton = findViewById(R.id.login_button);
-        Button cameraButton = findViewById(R.id.camera_button);
-
-        mapButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, MapsActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final Intent intent = new Intent(LoginActivity.this, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        cameraButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final Intent intent = new Intent(LoginActivity.this, ObjectDetectionActivity.class);
-                startActivity(intent);
-            }
-        });
-    }
 }

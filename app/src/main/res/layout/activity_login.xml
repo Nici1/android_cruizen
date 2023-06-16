@@ -1,70 +1,93 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/login_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/background_theme">
 
+
     <ImageView
         android:id="@+id/my_image_view"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="65dp"
-        android:src="@mipmap/ic_launcher"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@id/content_layout"
-        android:background="#0f7cc0"/>
+        android:layout_width="246dp"
+        android:layout_height="258dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/logo5" />
 
+    <TextView
+        android:layout_width="269dp"
+        android:layout_height="77dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-30dp"
 
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp"
+        android:text="Already have an account?"/>
 
     <LinearLayout
         android:id="@+id/content_layout"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_above="@id/bottom_bar"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="145dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-20dp"
         android:background="@drawable/white_rectangle"
         android:gravity="center"
         android:orientation="vertical">
 
         <EditText
             android:id="@+id/email_field"
-            android:layout_width="200dp"
+            android:layout_width="300dp"
             android:layout_height="62dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="8dp"
+            android:gravity="center"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:paddingLeft="60dp"
-            android:background="@drawable/edit_text"
-            android:textColor="#FFFFFF"
-            android:layout_marginTop="45dp"/>
+            android:paddingStart="16dp"
+            android:paddingEnd="40dp"
+            android:textColorHint="#FFFFFF" />
+
 
         <EditText
             android:id="@+id/password_field"
-            android:layout_width="200dp"
+            android:layout_width="300dp"
             android:layout_height="62dp"
-            android:hint="Password"
-            android:paddingLeft="55dp"
-            android:textColor="#FFFFFF"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="16dp"
+
             android:background="@drawable/edit_text"
 
+            android:drawableLeft="@drawable/baseline_key_24"
+            android:gravity="center"
+
+            android:hint="Password"
             android:inputType="textPassword"
-            />
+            android:paddingStart="16dp"
+            android:paddingEnd="40dp"
+            android:textColorHint="#FFFFFF" />
 
         <Button
             android:id="@+id/login_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_width="315dp"
+            android:layout_height="64dp"
+
+            android:layout_marginTop="40dp"
+
             android:layout_weight="1"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/edit_text"
-            android:text="Sign in" />
+            android:background="@drawable/edit_button"
+            android:shadowColor="#80000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:text="Sign in"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp"
+
+            />
 
         <TextView
             android:id="@+id/register_link"
@@ -77,20 +100,11 @@
             android:layout_marginEnd="59dp"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
-            android:text="Do not have an account yet? Register!" />
+            android:text="New user? Register!" />
 
     </LinearLayout>
 
-    <include
-        android:id="@+id/bottom_bar"
-        layout="@layout/bottom_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true" />
-
-
-
-</RelativeLayout>
+</LinearLayout>
 
 
 

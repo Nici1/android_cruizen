@@ -6,12 +6,14 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.bottomnavigation.BottomNavigationItemView;
+
 public class BottomBarActivity extends AppCompatActivity {
 
     public void setBottomBar() {
-        Button button1 = findViewById(R.id.login_button);
-        Button button2 = findViewById(R.id.camera_button);
-        Button button3 = findViewById(R.id.map_button);
+        BottomNavigationItemView button1 = findViewById(R.id.login_button);
+        BottomNavigationItemView button2 = findViewById(R.id.camera_button);
+        BottomNavigationItemView button3 = findViewById(R.id.map_button);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override

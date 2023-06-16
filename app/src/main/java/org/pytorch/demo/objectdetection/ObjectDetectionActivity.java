@@ -40,6 +40,7 @@ import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -389,9 +390,9 @@ public class ObjectDetectionActivity extends AbstractCameraXActivity<ObjectDetec
     }
 
     private void setupButtonListeners() {
-        Button mapButton = findViewById(R.id.map_button);
-        Button loginButton = findViewById(R.id.login_button);
-        Button cameraButton = findViewById(R.id.camera_button);
+        BottomNavigationItemView mapButton = findViewById(R.id.map_button);
+        BottomNavigationItemView loginButton = findViewById(R.id.login_button);
+        BottomNavigationItemView cameraButton = findViewById(R.id.camera_button);
 
         mapButton.setOnClickListener(new View.OnClickListener() {
             @Override

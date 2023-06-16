@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,16 +19,16 @@ import org.pytorch.demo.objectdetection.R;
 
 public final class ActivityRegisterBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
-
-  @NonNull
-  public final BottomBarBinding bottomBar;
+  private final LinearLayout rootView;
 
   @NonNull
   public final LinearLayout contentLayout;
 
   @NonNull
   public final EditText emailField;
+
+  @NonNull
+  public final LinearLayout loginLayout;
 
   @NonNull
   public final TextView loginLink;
@@ -46,29 +45,25 @@ public final class ActivityRegisterBinding implements ViewBinding {
   @NonNull
   public final Button registerButton;
 
-  @NonNull
-  public final RelativeLayout registerLayout;
-
-  private ActivityRegisterBinding(@NonNull RelativeLayout rootView,
-      @NonNull BottomBarBinding bottomBar, @NonNull LinearLayout contentLayout,
-      @NonNull EditText emailField, @NonNull TextView loginLink, @NonNull ImageView myImageView,
-      @NonNull EditText nameField, @NonNull EditText passwordField, @NonNull Button registerButton,
-      @NonNull RelativeLayout registerLayout) {
+  private ActivityRegisterBinding(@NonNull LinearLayout rootView,
+      @NonNull LinearLayout contentLayout, @NonNull EditText emailField,
+      @NonNull LinearLayout loginLayout, @NonNull TextView loginLink,
+      @NonNull ImageView myImageView, @NonNull EditText nameField, @NonNull EditText passwordField,
+      @NonNull Button registerButton) {
     this.rootView = rootView;
-    this.bottomBar = bottomBar;
     this.contentLayout = contentLayout;
     this.emailField = emailField;
+    this.loginLayout = loginLayout;
     this.loginLink = loginLink;
     this.myImageView = myImageView;
     this.nameField = nameField;
     this.passwordField = passwordField;
     this.registerButton = registerButton;
-    this.registerLayout = registerLayout;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -93,13 +88,6 @@ public final class ActivityRegisterBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.bottom_bar;
-      View bottomBar = rootView.findViewById(id);
-      if (bottomBar == null) {
-        break missingId;
-      }
-      BottomBarBinding binding_bottomBar = BottomBarBinding.bind(bottomBar);
-
       id = R.id.content_layout;
       LinearLayout contentLayout = rootView.findViewById(id);
       if (contentLayout == null) {
@@ -111,6 +99,8 @@ public final class ActivityRegisterBinding implements ViewBinding {
       if (emailField == null) {
         break missingId;
       }
+
+      LinearLayout loginLayout = (LinearLayout) rootView;
 
       id = R.id.login_link;
       TextView loginLink = rootView.findViewById(id);
@@ -142,11 +132,8 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      RelativeLayout registerLayout = (RelativeLayout) rootView;
-
-      return new ActivityRegisterBinding((RelativeLayout) rootView, binding_bottomBar,
-          contentLayout, emailField, loginLink, myImageView, nameField, passwordField,
-          registerButton, registerLayout);
+      return new ActivityRegisterBinding((LinearLayout) rootView, contentLayout, emailField,
+          loginLayout, loginLink, myImageView, nameField, passwordField, registerButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

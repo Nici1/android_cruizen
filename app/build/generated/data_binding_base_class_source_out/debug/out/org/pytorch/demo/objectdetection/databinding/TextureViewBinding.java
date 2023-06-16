@@ -5,12 +5,12 @@ import android.view.LayoutInflater;
 import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -24,25 +24,17 @@ public final class TextureViewBinding implements ViewBinding {
   public final LinearLayout bottomBar;
 
   @NonNull
-  public final Button cameraButton;
-
-  @NonNull
-  public final Button loginButton;
-
-  @NonNull
-  public final Button mapButton;
+  public final BottomNavigationView bottomNavigationView;
 
   @NonNull
   public final TextureView objectDetectionTextureView;
 
   private TextureViewBinding(@NonNull RelativeLayout rootView, @NonNull LinearLayout bottomBar,
-      @NonNull Button cameraButton, @NonNull Button loginButton, @NonNull Button mapButton,
+      @NonNull BottomNavigationView bottomNavigationView,
       @NonNull TextureView objectDetectionTextureView) {
     this.rootView = rootView;
     this.bottomBar = bottomBar;
-    this.cameraButton = cameraButton;
-    this.loginButton = loginButton;
-    this.mapButton = mapButton;
+    this.bottomNavigationView = bottomNavigationView;
     this.objectDetectionTextureView = objectDetectionTextureView;
   }
 
@@ -79,21 +71,9 @@ public final class TextureViewBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.camera_button;
-      Button cameraButton = rootView.findViewById(id);
-      if (cameraButton == null) {
-        break missingId;
-      }
-
-      id = R.id.login_button;
-      Button loginButton = rootView.findViewById(id);
-      if (loginButton == null) {
-        break missingId;
-      }
-
-      id = R.id.map_button;
-      Button mapButton = rootView.findViewById(id);
-      if (mapButton == null) {
+      id = R.id.bottomNavigationView;
+      BottomNavigationView bottomNavigationView = rootView.findViewById(id);
+      if (bottomNavigationView == null) {
         break missingId;
       }
 
@@ -103,8 +83,8 @@ public final class TextureViewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new TextureViewBinding((RelativeLayout) rootView, bottomBar, cameraButton, loginButton,
-          mapButton, objectDetectionTextureView);
+      return new TextureViewBinding((RelativeLayout) rootView, bottomBar, bottomNavigationView,
+          objectDetectionTextureView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

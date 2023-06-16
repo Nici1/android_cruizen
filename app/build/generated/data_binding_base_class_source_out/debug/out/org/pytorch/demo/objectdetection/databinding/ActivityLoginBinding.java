@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,10 +19,7 @@ import org.pytorch.demo.objectdetection.R;
 
 public final class ActivityLoginBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
-
-  @NonNull
-  public final BottomBarBinding bottomBar;
+  private final LinearLayout rootView;
 
   @NonNull
   public final LinearLayout contentLayout;
@@ -35,7 +31,7 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final Button loginButton;
 
   @NonNull
-  public final RelativeLayout loginLayout;
+  public final LinearLayout loginLayout;
 
   @NonNull
   public final ImageView myImageView;
@@ -46,13 +42,11 @@ public final class ActivityLoginBinding implements ViewBinding {
   @NonNull
   public final TextView registerLink;
 
-  private ActivityLoginBinding(@NonNull RelativeLayout rootView,
-      @NonNull BottomBarBinding bottomBar, @NonNull LinearLayout contentLayout,
-      @NonNull EditText emailField, @NonNull Button loginButton,
-      @NonNull RelativeLayout loginLayout, @NonNull ImageView myImageView,
-      @NonNull EditText passwordField, @NonNull TextView registerLink) {
+  private ActivityLoginBinding(@NonNull LinearLayout rootView, @NonNull LinearLayout contentLayout,
+      @NonNull EditText emailField, @NonNull Button loginButton, @NonNull LinearLayout loginLayout,
+      @NonNull ImageView myImageView, @NonNull EditText passwordField,
+      @NonNull TextView registerLink) {
     this.rootView = rootView;
-    this.bottomBar = bottomBar;
     this.contentLayout = contentLayout;
     this.emailField = emailField;
     this.loginButton = loginButton;
@@ -64,7 +58,7 @@ public final class ActivityLoginBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -89,13 +83,6 @@ public final class ActivityLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.bottom_bar;
-      View bottomBar = rootView.findViewById(id);
-      if (bottomBar == null) {
-        break missingId;
-      }
-      BottomBarBinding binding_bottomBar = BottomBarBinding.bind(bottomBar);
-
       id = R.id.content_layout;
       LinearLayout contentLayout = rootView.findViewById(id);
       if (contentLayout == null) {
@@ -114,7 +101,7 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      RelativeLayout loginLayout = (RelativeLayout) rootView;
+      LinearLayout loginLayout = (LinearLayout) rootView;
 
       id = R.id.my_image_view;
       ImageView myImageView = rootView.findViewById(id);
@@ -134,8 +121,8 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginBinding((RelativeLayout) rootView, binding_bottomBar, contentLayout,
-          emailField, loginButton, loginLayout, myImageView, passwordField, registerLink);
+      return new ActivityLoginBinding((LinearLayout) rootView, contentLayout, emailField,
+          loginButton, loginLayout, myImageView, passwordField, registerLink);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

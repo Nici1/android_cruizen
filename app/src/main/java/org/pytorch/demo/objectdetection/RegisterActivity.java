@@ -44,7 +44,7 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        setupButtonListeners();
+
 
         mNameField = findViewById(R.id.name_field);
         mEmailField = findViewById(R.id.email_field);
@@ -100,7 +100,8 @@ public class RegisterActivity extends AppCompatActivity {
                     if (apiResponse.isSuccess()) {
                         runOnUiThread(() -> {
                             Toast.makeText(RegisterActivity.this, "Registration successful", Toast.LENGTH_SHORT).show();
-                            // Start the main activity
+                            final Intent intent = new Intent(RegisterActivity.this, ProfileActivity.class);
+                            startActivity(intent);
                         });
                     } else {
                         runOnUiThread(() -> {
@@ -111,40 +112,6 @@ public class RegisterActivity extends AppCompatActivity {
             });
         });
 
-    }
-
-
-
-
-
-    private void setupButtonListeners() {
-        Button mapButton = findViewById(R.id.map_button);
-        Button loginButton = findViewById(R.id.login_button);
-        Button cameraButton = findViewById(R.id.camera_button);
-
-        mapButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(RegisterActivity.this, MapsActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        cameraButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final Intent intent = new Intent(RegisterActivity.this, ObjectDetectionActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
 }
