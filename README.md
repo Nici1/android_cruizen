@@ -21,5 +21,13 @@ Cruizen je mobilna aplikacija, ki uporabnikom omogoča sledenje prometnim opozor
 
 ## Hitri pregled
 
+![Alt Text](register.jpg)
+![Alt Text](login.jpg)
+![Alt Text](Camera.jpg)
+![Alt Text](Maps.jpg)
+![Alt Text](Info.jpg)
+![Alt Text](fact.jpg)
+
+
 
 
