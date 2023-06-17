@@ -35,7 +35,6 @@ public class BottomBarActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 final Intent intent = new Intent(BottomBarActivity.this, MapsActivity.class);
-
                 startActivity(intent);
             }
         });

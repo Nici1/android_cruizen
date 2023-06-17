@@ -4,24 +4,8 @@
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/cats.xml"
     },
     {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_second.xml",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/fragment_second.xml"
-    },
-    {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_second2.xml",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/fragment_second2.xml"
-    },
-    {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_first.xml",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/fragment_first.xml"
-    },
-    {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_profile.xml",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/activity_profile.xml"
-    },
-    {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_register.xml",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/content_register.xml"
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_fun_fact.xml",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/content_fun_fact.xml"
     },
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_maps.xml",
@@ -32,20 +16,8 @@
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/activity_login.xml"
     },
     {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_login.xml",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/content_login.xml"
-    },
-    {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_register.xml",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/activity_register.xml"
-    },
-    {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_first2.xml",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/fragment_first2.xml"
-    },
-    {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_second3.xml",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/fragment_second3.xml"
     },
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_data.xml",
@@ -54,10 +26,6 @@
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_info.xml",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/activity_info.xml"
-    },
-    {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_data.xml",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/content_data.xml"
     },
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/texture_view.xml",
@@ -76,7 +44,7 @@
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/bottom_bar.xml"
     },
     {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_first3.xml",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/fragment_first3.xml"
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_fun_fact.xml",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/activity_fun_fact.xml"
     }
 ]

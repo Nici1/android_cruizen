@@ -221,7 +221,7 @@ public class ObjectDetectionActivity extends AbstractCameraXActivity<ObjectDetec
         timer = new Timer();
         minuteCount = 0;
 
-        // Schedule the database update task to run every minute
+        // Načrtovanje opravila posodabljanja podatkovne zbirke, ki se bo izvajalo vsako minuto
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
@@ -238,7 +238,7 @@ public class ObjectDetectionActivity extends AbstractCameraXActivity<ObjectDetec
                 int currentTrafficLightCount = traffic_light;
                 int currentFireHydrantCount = fire_hydrant;
 
-                // Reset the variables to 0
+                // Ponastavitev spremenljivk na 0
                 car = 0;
                 bicycle = 0;
                 cat = 0;
@@ -249,10 +249,14 @@ public class ObjectDetectionActivity extends AbstractCameraXActivity<ObjectDetec
                 fire_hydrant = 0;
                 person = 0;
 
-                // Call sendLocationDataToServer with the current counts
-                sendLocationDataToServer(currentPersonCount, currentCarCount, currentBicycleCount, currentCatCount, currentDogCount, currentTruckCount, currentStopSignCount, currentTrafficLightCount, currentFireHydrantCount);
 
-                // Increment the minute count
+
+                if (currentPersonCount !=0 ||  currentCarCount !=0 || currentBicycleCount !=0 || currentCatCount !=0 ||
+                        currentDogCount !=0 ||currentTruckCount !=0 || currentStopSignCount !=0 || currentTrafficLightCount !=0 ) {
+                    sendLocationDataToServer(currentPersonCount, currentCarCount, currentBicycleCount, currentCatCount, currentDogCount, currentTruckCount, currentStopSignCount, currentTrafficLightCount, currentFireHydrantCount);
+
+                }
+
                 minuteCount++;
 
                 runOnUiThread(new Runnable() {
@@ -262,7 +266,7 @@ public class ObjectDetectionActivity extends AbstractCameraXActivity<ObjectDetec
                     }
                 });
             }
-        }, 60 * 1000, 60 * 1000); // Delay: 1 minute, Period: 1 minute
+        }, 60 * 1000, 60 * 1000); // Zakasnitev: 1 minuta, Obdobje: 1 minuta
     }
 
 
@@ -272,7 +276,7 @@ public class ObjectDetectionActivity extends AbstractCameraXActivity<ObjectDetec
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        // Cancel the timer when the activity is destroyed
+        // Prekliči timer, ko je dejavnost uničena.
         timer.cancel();
     }
 
@@ -289,24 +293,24 @@ public class ObjectDetectionActivity extends AbstractCameraXActivity<ObjectDetec
 
 
     public void sendLocationData(int currentPersonCount, int currentCarCount, int currentBicycleCount, int currentCatCount, int currentDogCount, int currentTruckCount, int currentStopSignCount, int currentTrafficLightCount, int currentFireHydrantCount) {
-        // Get the current location
+
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // Permission should have been granted at this point, but it's always good to check again
+
             return;
         }
         fusedLocationProviderClient.getLastLocation().addOnSuccessListener(this, new OnSuccessListener<Location>() {
             @Override
             public void onSuccess(Location location) {
                 if (location != null) {
-                    // Get the latitude and longitude
+                    // Pridobite zemljepisno širino in dolžino
                     double latitude = location.getLatitude();
                     double longitude = location.getLongitude();
 
-                    // Get the current date and time
+                    // Pridobite trenutni datum in čas
                     Calendar calendar = Calendar.getInstance();
                     Date currentDate = calendar.getTime();
 
-                    // Create a JSON object to hold the location and date
+                    // Ustvarite objekt JSON, v katerem bosta shranjena lokacija in datum
                     JSONObject locationData = new JSONObject();
                     try {
                         locationData.put("latitude", latitude);
@@ -333,13 +337,12 @@ public class ObjectDetectionActivity extends AbstractCameraXActivity<ObjectDetec
                     }
 
 
-                    // Create a request queue using Volley
                     RequestQueue requestQueue = Volley.newRequestQueue(ObjectDetectionActivity.this);
 
-                    // Define the server URL where you want to send the data
+
                     String serverUrl = "http://212.101.137.119:4000/traffic-alerts";
 
-                    // Create a request body with the location data
+
                     final String requestBody = locationData.toString();
 
                     // Create a POST request
@@ -380,7 +383,6 @@ public class ObjectDetectionActivity extends AbstractCameraXActivity<ObjectDetec
                         }
                     };
 
-                    // Add the request to the request queue
                     requestQueue.add(stringRequest);
                 } else {
                     Toast.makeText(ObjectDetectionActivity.this, "Unable to get current location", Toast.LENGTH_SHORT).show();
@@ -388,6 +390,9 @@ public class ObjectDetectionActivity extends AbstractCameraXActivity<ObjectDetec
             }
         });
     }
+
+
+
 
     private void setupButtonListeners() {
         BottomNavigationItemView mapButton = findViewById(R.id.map_button);

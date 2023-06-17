@@ -56,7 +56,6 @@ public class MapsActivity extends BottomBarActivity implements OnMapReadyCallbac
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1;
     private FusedLocationProviderClient fusedLocationProviderClient;
 
-    Button b;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,11 +99,11 @@ public class MapsActivity extends BottomBarActivity implements OnMapReadyCallbac
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Check if location permission is granted
+        // Preveri ali je dovoljenje za lokacijo odobreno
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             mMap.setMyLocationEnabled(true); // Enable the "My Location" button
 
-            // Get the last known location of the device
+
             fusedLocationProviderClient.getLastLocation().addOnSuccessListener(this, new OnSuccessListener<Location>() {
                 @Override
                 public void onSuccess(Location location) {
@@ -122,7 +121,7 @@ public class MapsActivity extends BottomBarActivity implements OnMapReadyCallbac
                 }
             });
         } else {
-            // Request location permission
+
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, LOCATION_PERMISSION_REQUEST_CODE);
         }
     }
@@ -157,7 +156,7 @@ public class MapsActivity extends BottomBarActivity implements OnMapReadyCallbac
     }
 
     private double getRandomOffset() {
-        // Generate a random number between -0.0001 and 0.0001
+        // Generiranje naključnega števila med -0,0001 in 0,0001
         double min = -0.0001;
         double max = 0.0001;
         return min + Math.random() * (max - min);
@@ -171,7 +170,7 @@ public class MapsActivity extends BottomBarActivity implements OnMapReadyCallbac
         TrafficAlertApiClient.getTrafficAlerts(token, new TrafficAlertApiClient.ApiResponseListener() {
             @Override
             public void onSuccess(String response) {
-                // Handle the successful response here
+
                 Log.d("API", "Response: " + response);
 
                 try {
@@ -196,11 +195,10 @@ public class MapsActivity extends BottomBarActivity implements OnMapReadyCallbac
                             double coordinates [] = {latitude, longitude};
                             displayDetections(detectionsArray, coordinates);
 
-                            // Use the detection values to display markers on the map with different colors
-                            // ...
+
                         }
                     } else {
-                        // Handle the case when success is false
+
 
                     }
                 } catch (JSONException e) {
@@ -217,6 +215,8 @@ public class MapsActivity extends BottomBarActivity implements OnMapReadyCallbac
         });
 
     }
+
+
 
 
 

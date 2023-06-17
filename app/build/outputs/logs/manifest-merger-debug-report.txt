@@ -183,48 +183,48 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/nikol
 		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:16:9-40
 	android:usesCleartextTraffic
 		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:17:9-44
-activity#org.pytorch.demo.objectdetection.DataActivity
-ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:18:9-22:59
-	android:label
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:21:13-56
+activity#org.pytorch.demo.objectdetection.FunFactActivity
+ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:18:9-20:40
 	android:exported
 		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:20:13-37
-	android:theme
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:22:13-56
 	android:name
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:19:13-41
-activity#org.pytorch.demo.objectdetection.infoActivity
-ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:23:9-25:40
-	android:exported
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:25:13-37
-	android:name
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:24:13-41
-activity#org.pytorch.demo.objectdetection.RegisterActivity
-ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:26:9-30:59
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:19:13-44
+activity#org.pytorch.demo.objectdetection.DataActivity
+ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:21:9-25:59
 	android:label
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:29:13-60
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:24:13-56
+	android:exported
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:23:13-37
+	android:theme
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:25:13-56
+	android:name
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:22:13-41
+activity#org.pytorch.demo.objectdetection.infoActivity
+ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:26:9-28:40
 	android:exported
 		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:28:13-37
-	android:theme
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:30:13-56
 	android:name
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:27:13-45
-activity#org.pytorch.demo.objectdetection.LoginActivity
-ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:31:9-35:59
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:27:13-41
+activity#org.pytorch.demo.objectdetection.RegisterActivity
+ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:29:9-33:59
 	android:label
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:34:13-57
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:32:13-60
 	android:exported
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:33:13-37
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:31:13-37
 	android:theme
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:35:13-56
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:33:13-56
 	android:name
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:32:13-42
-activity#org.pytorch.demo.objectdetection.ProfileActivity
-ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:36:9-38:39
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:30:13-45
+activity#org.pytorch.demo.objectdetection.LoginActivity
+ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:34:9-38:59
+	android:label
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:37:13-57
 	android:exported
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:38:13-36
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:36:13-37
+	android:theme
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:38:13-56
 	android:name
-		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:37:13-44
+		ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:35:13-42
 activity#org.pytorch.demo.objectdetection.MapsActivity
 ADDED from /home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:39:9-41:39
 	android:exported

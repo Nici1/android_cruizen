@@ -8,16 +8,16 @@
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/white_rectangle.xml"
     },
     {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/navigation_nav_graph2.xml.flat",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/navigation/nav_graph2.xml"
-    },
-    {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/mipmap-xhdpi_background_foreground.png.flat",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-xhdpi/background_foreground.png"
     },
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/navigation_nav_graph2.xml.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/navigation/nav_graph2.xml"
     },
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_background.png.flat",
@@ -32,12 +32,12 @@
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-hdpi/background_foreground.png"
     },
     {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_car.png.flat",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/car.png"
-    },
-    {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_person.png.flat",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/person.png"
+    },
+    {
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_car.png.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/car.png"
     },
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/layout_activity_data.xml.flat",
@@ -54,6 +54,10 @@
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/mipmap-mdpi_background_round.png.flat",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-mdpi/background_round.png"
+    },
+    {
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/layout_activity_fun_fact.xml.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/activity_fun_fact.xml"
     },
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/menu_bottom_nav_menu.xml.flat",
@@ -76,16 +80,20 @@
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-xhdpi/background.png"
     },
     {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/layout_fragment_first2.xml.flat",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/fragment_first2.xml"
-    },
-    {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/anim_slide_out_right.xml.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/anim/slide_out_right.xml"
+    },
+    {
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/anim_slide_in_right.xml.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/anim/slide_in_right.xml"
     },
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_dog.png.flat",
@@ -104,32 +112,20 @@
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/layout_content_data.xml.flat",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/content_data.xml"
-    },
-    {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/layout_content_register.xml.flat",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/content_register.xml"
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_bicycle1.jpg.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/bicycle1.jpg"
     },
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/layout_activity_register.xml.flat",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/activity_register.xml"
     },
     {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/layout_fragment_second3.xml.flat",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/fragment_second3.xml"
-    },
-    {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/layout_activity_maps.xml.flat",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/activity_maps.xml"
-    },
-    {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_img.png.flat",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/img.png"
     },
     {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/layout_fragment_first.xml.flat",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/fragment_first.xml"
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/layout_activity_maps.xml.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/activity_maps.xml"
     },
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
@@ -140,12 +136,16 @@
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/baseline_person_24.xml"
     },
     {
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_profile.xml.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/profile.xml"
+    },
+    {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_background_round.png.flat",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-xxhdpi/background_round.png"
     },
     {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_profile.xml.flat",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/profile.xml"
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_stop_sign1.jpg.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/stop_sign1.jpg"
     },
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/layout_activity_login.xml.flat",
@@ -156,10 +156,6 @@
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/layout_fragment_first3.xml.flat",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/fragment_first3.xml"
-    },
-    {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
@@ -168,12 +164,24 @@
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
     },
     {
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_car1.jpg.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/car1.jpg"
+    },
+    {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_dog1.jpg.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/dog1.jpg"
+    },
+    {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_cat.png.flat",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/cat.png"
+    },
+    {
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_round_button.xml.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/round_button.xml"
     },
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/mipmap-mdpi_background.png.flat",
@@ -188,6 +196,10 @@
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/anim_slide_in_left.xml.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/anim/slide_in_left.xml"
+    },
+    {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_foreground.png.flat",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
     },
@@ -198,10 +210,6 @@
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/layout_activity_info.xml.flat",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/activity_info.xml"
-    },
-    {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/layout_fragment_second2.xml.flat",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/fragment_second2.xml"
     },
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_truck.png.flat",
@@ -216,6 +224,10 @@
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-xxxhdpi/background_foreground.png"
     },
     {
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/anim_slide_out_left.xml.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/anim/slide_out_left.xml"
+    },
+    {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
@@ -224,8 +236,8 @@
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-hdpi/background_round.png"
     },
     {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/layout_activity_profile.xml.flat",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/activity_profile.xml"
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_cat1.jpg.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/cat1.jpg"
     },
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_ellipse_20_shape.xml.flat",
@@ -244,16 +256,20 @@
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/background_theme.png"
     },
     {
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/navigation_nav_graph4.xml.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/navigation/nav_graph4.xml"
+    },
+    {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_bicycle.png.flat",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/bicycle.png"
     },
     {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
-    },
-    {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/layout_cats.xml.flat",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/cats.xml"
+    },
+    {
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -276,6 +292,10 @@
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/navigation/nav_graph.xml"
     },
     {
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_truck1.jpg.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/truck1.jpg"
+    },
+    {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
@@ -292,12 +312,12 @@
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/baseline_name_24.xml"
     },
     {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_background_round.png.flat",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-xxxhdpi/background_round.png"
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_traffic_light1.jpg.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/traffic_light1.jpg"
     },
     {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/layout_content_login.xml.flat",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/content_login.xml"
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_background_round.png.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-xxxhdpi/background_round.png"
     },
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_edit_button.xml.flat",
@@ -324,12 +344,16 @@
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/rectangle_42_shape.xml"
     },
     {
-        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/layout_fragment_second.xml.flat",
-        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/fragment_second.xml"
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/layout_content_fun_fact.xml.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/layout/content_fun_fact.xml"
     },
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/drawable_person1.jpg.flat",
+        "source": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/res/drawable/person1.jpg"
     },
     {
         "merged": "/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/build/intermediates/res/merged/debug/navigation_nav_graph3.xml.flat",

@@ -96,7 +96,7 @@ public class LoginActivity extends BottomBarActivity {
             );
 
             Request request = new Request.Builder()
-                    .url("http://212.101.137.119:4000/login")
+                    .url("http://212.101.137.119:4000/login") // IP naslov in št. porta remote strežnika
                     .post(requestBody)
                     .header("Content-Type", "application/json")
                     .build();
@@ -113,8 +113,7 @@ public class LoginActivity extends BottomBarActivity {
                         String token = getToken(response);
 
                         if(token != null) {
-                            // Store the authentication token in session or storage
-                            // For example, using SharedPreferences:
+                            // Shranitev avtentikacijskega žetona (token) v sejo
                             SharedPreferences sharedPreferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
                             sharedPreferences.edit().putString("authToken", token).apply();
                             Log.i("Token", token);
@@ -137,6 +136,7 @@ public class LoginActivity extends BottomBarActivity {
     }
 
     private String getToken(Response response) {
+        // Funkcija ki pridobi token-a iz glave odgovora
         Headers headers = response.headers();
         if (headers != null) {
             String tokenHeader = headers.get("Set-Cookie");

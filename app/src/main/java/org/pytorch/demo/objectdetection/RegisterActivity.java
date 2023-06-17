@@ -100,7 +100,7 @@ public class RegisterActivity extends AppCompatActivity {
                     if (apiResponse.isSuccess()) {
                         runOnUiThread(() -> {
                             Toast.makeText(RegisterActivity.this, "Registration successful", Toast.LENGTH_SHORT).show();
-                            final Intent intent = new Intent(RegisterActivity.this, ProfileActivity.class);
+                            final Intent intent = new Intent(RegisterActivity.this, infoActivity.class);
                             startActivity(intent);
                         });
                     } else {

@@ -27,34 +27,33 @@ class Result {
 };
 
 public class PrePostProcessor {
-    // for yolov5 model, no need to apply MEAN and STD
+
     static float[] NO_MEAN_RGB = new float[] {0.0f, 0.0f, 0.0f};
     static float[] NO_STD_RGB = new float[] {1.0f, 1.0f, 1.0f};
 
-    // model input image size
+
     static int mInputWidth = 640;
     static int mInputHeight = 640;
 
-    // model output is of size 25200*(num_of_class+5)
-    private static int mOutputRow = 25200; // as decided by the YOLOv5 model for input image of size 640*640
-    private static int mOutputColumn = 85; // left, top, right, bottom, score and 80 class probability
-    private static float mThreshold = 0.30f; // score above which a detection is generated
+
+    private static int mOutputRow = 25200; // https://pub.towardsai.net/yolov5-m-implementation-from-scratch-with-pytorch-c8f84a66c98b
+    private static int mOutputColumn = 85; // levo, gor, desno, dol, score in 80 class probability
+    private static float mThreshold = 0.30f;
     private static int mNmsLimit = 15;
 
     static String[] mClasses;
 
 
-    /**
-     Removes bounding boxes that overlap too much with other boxes that have
-     a higher score.
-     - Parameters:
-     - boxes: an array of bounding boxes and their scores
-     - limit: the maximum number of boxes that will be selected
-     - threshold: used to decide whether boxes overlap too much
+    /*
+     Odstrani omejitvena polja, ki se preveč prekrivajo z drugimi polji, ki imajo višjo oceno.
+     Parametri:
+     - škatle: polje omejitvenih polj in njihovih točk
+     - limit: največje število polj, ki bodo izbrana
+     - prag: uporablja se za odločitev, ali se polja preveč prekrivajo
      */
     static ArrayList<Result> nonMaxSuppression(ArrayList<Result> boxes, int limit, float threshold) {
 
-        // Do an argsort on the confidence scores, from high to low.
+        // Razvrščanje
         Collections.sort(boxes,
                 new Comparator<Result>() {
                     @Override
@@ -68,11 +67,11 @@ public class PrePostProcessor {
         Arrays.fill(active, true);
         int numActive = active.length;
 
-        // The algorithm is simple: Start with the box that has the highest score.
-        // Remove any remaining boxes that overlap it more than the given threshold
-        // amount. If there are any boxes left (i.e. these did not overlap with any
-        // previous boxes), then repeat this procedure, until no more boxes remain
-        // or the limit has been reached.
+        /*
+        Kako deluje algoritem -> Začnite z okencem z najvišjim številom točk, odstranite vsa preostala polja, ki se prekrivajo več kot določen prag znesek,
+        če so ostala še kakšna polja (tj. niso se prekrivala z nobenim prejšnjih polj), ponovite ta postopek, dokler ne ostane nobeno polje več,
+        ali pa je bila dosežena meja.
+         */
         boolean done = false;
         for (int i=0; i<boxes.size() && !done; i++) {
             if (active[i]) {
@@ -98,8 +97,8 @@ public class PrePostProcessor {
         return selected;
     }
 
-    /**
-     Computes intersection-over-union overlap between two bounding boxes.
+    /*
+     Izračuna prekrivanje med dvema omejujočima poljema.
      */
     static float IOU(Rect a, Rect b) {
         float areaA = (a.right - a.left) * (a.bottom - a.top);
@@ -140,6 +139,18 @@ public class PrePostProcessor {
                         cls = j;
                     }
                 }
+
+                /*
+
+                Morda se sprašujete, zakaj uporabiti takšno metodo za omejitev vrst predmetov, ki jih želimo zaznati.
+                Zakaj ne bi preprosto odstranili drugih nepotrebnih stvari v datoteki classes.txt.
+                No, število zaznavnih razredov je povezano z velikostjo spremenljivke mOutputColumn.
+                Če odstranimo večino predmetov v datoteki in prilagodimo vrednost spremenljivke,
+                so okna za zaznavanje na zaslonu videti neverjetno majhna. V skladu z dokumentacijo je velikost
+                oken, ki se prikažejo na zaslonu, določena na podlagi števila predmetov, ki jih je mogoče odkriti.
+                Odločil sem se za ta način, saj nisem želel in nisem vedel, kako prilagoditi nekatere parametre algoritma, da bi dobil želeni rezultat.
+                P.S. Povečanje razmerja velikosti je povečalo velikost okne, vendar so tudi večino časa šli z zaslona.
+                 */
 
                 if(mClasses[cls].equals("person") || mClasses[cls].equals("bicycle") || mClasses[cls].equals("dog") ||
                         mClasses[cls].equals("cat") || mClasses[cls].equals("truck") || mClasses[cls].equals("fire hydrant") || mClasses[cls].equals("stop sign")

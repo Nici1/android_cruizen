@@ -11,6 +11,11 @@ import android.os.AsyncTask;
 
 public class TrafficAlertApiClient {
 
+
+    /*
+    Ta razred izvaja pridobivanje podatkov iz podatkovne baze. Za to preprosto pokličemo  /traffic-alerts (API endpoint) in analiziramo podatke v odgovoru
+     */
+
     public interface ApiResponseListener {
         void onSuccess(String response);
 
@@ -18,11 +23,15 @@ public class TrafficAlertApiClient {
     }
 
     public static void getTrafficAlerts(String token, final ApiResponseListener listener) {
+
+
         new AsyncTask<String, Void, String>() {
             @Override
             protected String doInBackground(String... params) {
                 String token = params[0];
                 try {
+
+
                     URL url = new URL("http://212.101.137.119:4000/traffic-alerts");
                     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                     connection.setRequestMethod("GET");
@@ -61,6 +70,9 @@ public class TrafficAlertApiClient {
             }
         }.execute(token);
     }
+
+
 }
+
 
 

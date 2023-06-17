@@ -4,8 +4,11 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GestureDetectorCompat;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +27,8 @@ import lecho.lib.hellocharts.view.LineChartView;
 public class DataActivity extends AppCompatActivity {
 
     private LineChartView chart;
+    private GestureDetectorCompat gestureDetectorCompat;
+    String receivedMessage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,17 +38,8 @@ public class DataActivity extends AppCompatActivity {
         Intent intent = getIntent();
         ArrayList<String> timeList = intent.getStringArrayListExtra("timeList");
         ArrayList<Integer> detectionList = intent.getIntegerArrayListExtra("detectionList");
+        receivedMessage = getIntent().getStringExtra("Detection");
 
-
-        Log.d("Data-time-0", timeList.get(0));
-        Log.d("Data-time-1", timeList.get(1));
-        Log.d("Data-time-2", timeList.get(2));
-        Log.d("Data-time-3", timeList.get(3));
-
-        Log.d("Detection-0", String.valueOf(detectionList.get(0)));
-        Log.d("Detection-1", String.valueOf(detectionList.get(1)));
-        Log.d("Detection-2", String.valueOf(detectionList.get(2)));
-        Log.d("Detection-3", String.valueOf(detectionList.get(3)));
 
 
         chart = findViewById(R.id.chart);
@@ -74,9 +70,12 @@ public class DataActivity extends AppCompatActivity {
 
         Viewport v = new Viewport(chart.getMaximumViewport());
         v.bottom = 0;
-        v.top = 12;
+        v.top = 150;
         chart.setMaximumViewport(v);
         chart.setCurrentViewport(v);
+
+
+        gestureDetectorCompat = new GestureDetectorCompat(this, new MyGestureListener());
     }
 
     private List<AxisValue> generateAxisValues(List<String> dates) {
@@ -86,7 +85,49 @@ public class DataActivity extends AppCompatActivity {
         }
         return axisValues;
     }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+
+        gestureDetectorCompat.onTouchEvent(event);
+        return super.onTouchEvent(event);
+    }
+
+    private class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
+        private static final int SWIPE_THRESHOLD = 100;
+        private static final int SWIPE_VELOCITY_THRESHOLD = 100;
+
+        @Override
+        public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+            float diffX = e2.getX() - e1.getX();
+            float diffY = e2.getY() - e1.getY();
+
+            if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
+                if (diffX > 0) {
+                    // Swipe from left to right, transition to SecondActivity
+                    Intent intent = new Intent(DataActivity.this, FunFactActivity.class);
+                    intent.putExtra("Detection", receivedMessage);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                    return true;
+                } else {
+
+                }
+            }
+            return super.onFling(e1, e2, velocityX, velocityY);
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

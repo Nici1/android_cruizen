@@ -66,47 +66,47 @@
 38        android:usesCleartextTraffic="true" >
 38-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:17:9-44
 39        <activity
-39-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:18:9-22:59
-40            android:name="org.pytorch.demo.objectdetection.DataActivity"
-40-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:19:13-41
-41            android:exported="false"
+39-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:18:9-20:40
+40            android:name="org.pytorch.demo.objectdetection.FunFactActivity"
+40-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:19:13-44
+41            android:exported="false" />
 41-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:20:13-37
-42            android:label="@string/title_activity_data"
-42-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:21:13-56
-43            android:theme="@style/AppTheme.NoActionBar" />
-43-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:22:13-56
-44        <activity
-44-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:23:9-25:40
-45            android:name="org.pytorch.demo.objectdetection.infoActivity"
-45-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:24:13-41
-46            android:exported="false" />
-46-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:25:13-37
+42        <activity
+42-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:21:9-25:59
+43            android:name="org.pytorch.demo.objectdetection.DataActivity"
+43-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:22:13-41
+44            android:exported="false"
+44-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:23:13-37
+45            android:label="@string/title_activity_data"
+45-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:24:13-56
+46            android:theme="@style/AppTheme.NoActionBar" />
+46-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:25:13-56
 47        <activity
-47-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:26:9-30:59
-48            android:name="org.pytorch.demo.objectdetection.RegisterActivity"
-48-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:27:13-45
-49            android:exported="false"
+47-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:26:9-28:40
+48            android:name="org.pytorch.demo.objectdetection.infoActivity"
+48-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:27:13-41
+49            android:exported="false" />
 49-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:28:13-37
-50            android:label="@string/title_activity_register"
-50-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:29:13-60
-51            android:theme="@style/AppTheme.NoActionBar" />
-51-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:30:13-56
-52        <activity
-52-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:31:9-35:59
-53            android:name="org.pytorch.demo.objectdetection.LoginActivity"
-53-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:32:13-42
-54            android:exported="false"
-54-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:33:13-37
-55            android:label="@string/title_activity_login"
-55-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:34:13-57
-56            android:theme="@style/AppTheme.NoActionBar" />
-56-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:35:13-56
-57        <activity
-57-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:36:9-38:39
-58            android:name="org.pytorch.demo.objectdetection.ProfileActivity"
-58-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:37:13-44
-59            android:exported="true" />
-59-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:38:13-36
+50        <activity
+50-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:29:9-33:59
+51            android:name="org.pytorch.demo.objectdetection.RegisterActivity"
+51-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:30:13-45
+52            android:exported="false"
+52-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:31:13-37
+53            android:label="@string/title_activity_register"
+53-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:32:13-60
+54            android:theme="@style/AppTheme.NoActionBar" />
+54-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:33:13-56
+55        <activity
+55-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:34:9-38:59
+56            android:name="org.pytorch.demo.objectdetection.LoginActivity"
+56-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:35:13-42
+57            android:exported="false"
+57-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:36:13-37
+58            android:label="@string/title_activity_login"
+58-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:37:13-57
+59            android:theme="@style/AppTheme.NoActionBar" />
+59-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:38:13-56
 60        <activity
 60-->/home/nikola/AndroidStudioProjects/dashcam_app_7/ObjectDetection/app/src/main/AndroidManifest.xml:39:9-41:39
 61            android:name="org.pytorch.demo.objectdetection.MapsActivity"
